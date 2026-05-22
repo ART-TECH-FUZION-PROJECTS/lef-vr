@@ -4,7 +4,7 @@
  * Plugin Name: Listing Engine Frontend
  * Plugin URI: https://arttechfuzion.com
  * Description: A vacation rental listing and booking plugin with property search, curated listing views, single-property pages, wishlists, reviews, reservations, user dashboards, and admin reservation management.
- * Version:     2.4.5
+ * Version:     2.4.6
  * Author:      Art-Tech Fuzion
  * Author URI:  https://arttechfuzion.com
  * Text Domain: listing-engine-frontend
@@ -17,7 +17,7 @@ if (! defined('ABSPATH')) {
 }
 
 // Define Constants.
-define('LEF_VERSION', '2.4.5');
+define('LEF_VERSION', '2.4.6');
 define('LEF_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('LEF_PLUGIN_URL', plugin_dir_url(__FILE__));
 

@@ -20,6 +20,10 @@ function lef_get_db_schemas() {
     
 	$charset_collate = $wpdb->get_charset_collate();
 
+	$reservation_table = $wpdb->prefix . 'ls_reservation';
+	$reviews_table     = $wpdb->prefix . 'ls_reviews';
+	$wishlist_table    = $wpdb->prefix . 'ls_wishlist';
+
 	// ─────────────────────────────────────────────────────────────
 	// Define all required tables and their CREATE queries.
 	// The DB handler reads these dynamically via dbDelta.
@@ -27,7 +31,7 @@ function lef_get_db_schemas() {
 	$schemas = array(
 
 		/* ==================== RESERVATION TABLE ==================== */
-		'wp_ls_reservation' => "CREATE TABLE wp_ls_reservation (
+		$reservation_table => "CREATE TABLE {$reservation_table} (
             id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
             user_id bigint(20) unsigned NOT NULL,
             property_id bigint(20) unsigned NOT NULL,
@@ -42,7 +46,7 @@ function lef_get_db_schemas() {
         ) $charset_collate;",
 
 		/* ==================== REVIEWS TABLE ==================== */
-        'wp_ls_reviews' => "CREATE TABLE wp_ls_reviews (
+        $reviews_table => "CREATE TABLE {$reviews_table} (
             id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
             user_id bigint(20) unsigned NOT NULL,
             property_id bigint(20) unsigned NOT NULL,
@@ -55,7 +59,7 @@ function lef_get_db_schemas() {
         ) $charset_collate;",
 
 		/* ==================== WISHLIST TABLE ==================== */
-		'wp_ls_wishlist' => "CREATE TABLE wp_ls_wishlist (
+		$wishlist_table => "CREATE TABLE {$wishlist_table} (
             id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
             user_id bigint(20) unsigned NOT NULL,
             property_id bigint(20) unsigned NOT NULL,
