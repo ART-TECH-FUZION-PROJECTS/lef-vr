@@ -1262,6 +1262,14 @@ function lef_edit_prof_send_otp() {
 	$new_password = isset( $_POST['password'] ) ? $_POST['password'] : '';
 	$iso          = isset( $_POST['iso'] ) ? sanitize_text_field( $_POST['iso'] ) : '';
 
+	// Safeguard: Block password changes for Google Auth users
+	if ( ! empty( $new_password ) ) {
+		$auth_method = get_user_meta( $user_id, 'auth_method', true );
+		if ( 'google_auth' === $auth_method ) {
+			wp_send_json_error( array( 'message' => 'This account is connected with Google, so password cannot be changed.' ) );
+		}
+	}
+
 	// 1. Validate Email Duplicate
 	if ( ! empty( $new_email ) && $new_email !== $user->user_email ) {
 		if ( lef_is_contact_duplicate( 'email', $new_email, $user_id ) ) {
@@ -1303,7 +1311,7 @@ function lef_edit_prof_send_otp() {
 	$otp   = sprintf( "%06d", mt_rand( 100000, 999999 ) );
 
 	global $wpdb;
-	$table = 'wp_authme_otp_storage';
+	$table = $wpdb->prefix . 'authme_otp_storage';
 
 	// Delete existing unverified OTPs for this email to prevent clutter
 	$wpdb->delete( $table, array( 'email' => $email, 'is_verified' => 0 ) );
@@ -1359,9 +1367,17 @@ function lef_edit_prof_save_changes() {
 	$phone     = isset( $_POST['phone'] ) ? sanitize_text_field( $_POST['phone'] ) : '';
 	$password  = isset( $_POST['password'] ) ? $_POST['password'] : '';
 
+	// Safeguard: Block password changes for Google Auth users
+	if ( ! empty( $password ) ) {
+		$auth_method = get_user_meta( $user_id, 'auth_method', true );
+		if ( 'google_auth' === $auth_method ) {
+			wp_send_json_error( array( 'message' => 'This account is connected with Google, so password cannot be changed.' ) );
+		}
+	}
+
 	// 1. Verify OTP
 	global $wpdb;
-	$table = 'wp_authme_otp_storage';
+	$table = $wpdb->prefix . 'authme_otp_storage';
 	$otp_record = $wpdb->get_row( $wpdb->prepare(
 		"SELECT * FROM $table WHERE email = %s AND otp_code = %s AND is_verified = 0 AND expires_at > %s",
 		$user->user_email,
@@ -1502,6 +1518,14 @@ function lef_edit_prof_save_direct() {
 	$email     = isset( $_POST['email'] ) ? sanitize_email( $_POST['email'] ) : '';
 	$phone     = isset( $_POST['phone'] ) ? sanitize_text_field( $_POST['phone'] ) : '';
 	$password  = isset( $_POST['password'] ) ? $_POST['password'] : '';
+
+	// Safeguard: Block password changes for Google Auth users
+	if ( ! empty( $password ) ) {
+		$auth_method = get_user_meta( $user_id, 'auth_method', true );
+		if ( 'google_auth' === $auth_method ) {
+			wp_send_json_error( array( 'message' => 'This account is connected with Google, so password cannot be changed.' ) );
+		}
+	}
 
 	// SECURITY CHECK: Ensure sensitive fields are UNCHANGED
 	$current_phone = get_user_meta( $user_id, 'mobile_number', true );

@@ -64,9 +64,22 @@
             // ── Form Submission ──
             this.$form.on('submit', (e) => {
                 e.preventDefault();
+
+                // Security block: check for Google Auth
+                const authMethod = this.$form.data('auth-method');
+                if (authMethod === 'google_auth' && self.$passInput.val().length > 0) {
+                    if (window.LEF_Toast) {
+                        LEF_Toast.show("This account is connected with Google, so password cannot be changed.", "error");
+                    }
+                    self.$passInput.val('');
+                    self.$confirmInput.val('');
+                    return;
+                }
+
                 if (self.validateForm()) {
                     const currentEmail = self.$emailInput.val().trim();
-                    const currentPhone = (self.$selectedCode.text() + ' ' + self.$phoneInput.val().trim()).replace(/\s+/g, '');
+                    const rawPhone = self.$phoneInput.val().trim();
+                    const currentPhone = rawPhone ? (self.$selectedCode.text() + ' ' + rawPhone).replace(/\s+/g, '') : '';
                     const initialPhone = self.state.initialPhone.replace(/\s+/g, '');
                     const hasSensitiveChanges = currentEmail !== self.state.initialEmail || 
                                                 currentPhone !== initialPhone || 
@@ -113,8 +126,28 @@
                 }
             });
 
-            this.$passInput.off('input').on('input', () => self.checkPasswordStrength());
-            this.$confirmInput.off('input').on('input', () => self.checkPasswordMatch());
+            this.$passInput.off('input').on('input', () => {
+                const authMethod = self.$form.data('auth-method');
+                if (authMethod === 'google_auth') {
+                    self.$passInput.val('');
+                    if (window.LEF_Toast) {
+                        LEF_Toast.show("This account is connected with Google, so password cannot be changed.", "error");
+                    }
+                    return;
+                }
+                self.checkPasswordStrength();
+            });
+            this.$confirmInput.off('input').on('input', () => {
+                const authMethod = self.$form.data('auth-method');
+                if (authMethod === 'google_auth') {
+                    self.$confirmInput.val('');
+                    if (window.LEF_Toast) {
+                        LEF_Toast.show("This account is connected with Google, so password cannot be changed.", "error");
+                    }
+                    return;
+                }
+                self.checkPasswordMatch();
+            });
 
             // ── Password Visibility ──
             $(document).off('click', '.lef-edit-prof-pass-toggle').on('click', '.lef-edit-prof-pass-toggle', function() {
@@ -241,7 +274,8 @@
 
         captureInitialState: function() {
             this.state.initialEmail = this.$emailInput.val().trim();
-            this.state.initialPhone = (this.$selectedCode.text() + ' ' + this.$phoneInput.val().trim()).replace(/\s+/g, '');
+            const rawPhone = this.$phoneInput.val().trim();
+            this.state.initialPhone = rawPhone ? (this.$selectedCode.text() + ' ' + rawPhone).replace(/\s+/g, '') : '';
         },
 
         // ─────────────────────────────────────────────────────
@@ -397,7 +431,17 @@
             if (!this.validateEmail()) valid = false;
             if (!this.validatePhone()) valid = false;
             
+            const authMethod = this.$form.data('auth-method');
             const passVal = this.$passInput.val();
+            if (authMethod === 'google_auth' && passVal.length > 0) {
+                if (window.LEF_Toast) {
+                    LEF_Toast.show("This account is connected with Google, so password cannot be changed.", "error");
+                }
+                this.$passInput.val('');
+                this.$confirmInput.val('');
+                return false;
+            }
+
             if (passVal.length > 0) {
                 if (!this.checkPasswordMatch(true)) valid = false;
                 
@@ -507,7 +551,7 @@
                     action: 'lef_edit_prof_send_otp',
                     nonce: lefMyProfileData.nonce,
                     email: this.$emailInput.val(),
-                    phone: this.$selectedCode.text() + ' ' + this.$phoneInput.val().trim().replace(/\D/g, ""),
+                    phone: this.$phoneInput.val().trim() ? this.$selectedCode.text() + ' ' + this.$phoneInput.val().trim().replace(/\D/g, "") : "",
                     password: this.$passInput.val()
                 },
                 success: function(res) {
@@ -535,7 +579,7 @@
 
             $submitBtn.prop('disabled', true).text('Verifying...');
 
-            const fullPhone = this.$selectedCode.text() + ' ' + this.$phoneInput.val().trim().replace(/\D/g, "");
+            const fullPhone = this.$phoneInput.val().trim() ? this.$selectedCode.text() + ' ' + this.$phoneInput.val().trim().replace(/\D/g, "") : "";
 
             $.ajax({
                 url: lefMyProfileData.ajax_url,
@@ -567,7 +611,7 @@
             const $btn = $('.lef-edit-prof-save-btn');
             $btn.prop('disabled', true).css('opacity', '0.7').text('Saving...');
 
-            const fullPhone = this.$selectedCode.text() + ' ' + this.$phoneInput.val().trim().replace(/\D/g, "");
+            const fullPhone = this.$phoneInput.val().trim() ? this.$selectedCode.text() + ' ' + this.$phoneInput.val().trim().replace(/\D/g, "") : "";
 
             $.ajax({
                 url: lefMyProfileData.ajax_url,

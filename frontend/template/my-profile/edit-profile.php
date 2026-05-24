@@ -66,7 +66,7 @@ $phone_display = $mobile_number;
         </div>
     </div>
 
-    <form class="lef-edit-prof-form" id="lef-edit-prof-form">
+    <form class="lef-edit-prof-form" id="lef-edit-prof-form" data-auth-method="<?php echo esc_attr(get_user_meta($user_id, 'auth_method', true)); ?>">
         <div class="lef-edit-prof-grid lef-edit-prof-p-m-b-common">
             <!-- Full Name -->
             <div class="lef-edit-prof-field">
