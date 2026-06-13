@@ -12,8 +12,8 @@
 
 .lef-manag-revi-header {
     align-items: center;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     display: flex;
     justify-content: space-between;
@@ -28,9 +28,9 @@
 
 .lef-manag-revi-title-icon {
     align-items: center;
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     border-radius: 1rem;
-    color: var(--leb-white);
+    color: var(--lef-white);
     display: flex;
     flex: 0 0 auto;
     justify-content: center;
@@ -44,7 +44,7 @@
 }
 
 .lef-manag-revi-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 1.6rem !important;
     font-weight: 500 !important;
     line-height: 1 !important;
@@ -53,7 +53,7 @@
 }
 
 .lef-manag-revi-subtitle {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 1;
@@ -63,9 +63,9 @@
 
 .lef-manag-revi-summary {
     align-items: center;
-    background: var(--leb-primary-light-bg);
+    background: var(--lef-primary-light-bg);
     border-radius: 1rem;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     display: inline-flex;
     font-size: 0.85rem;
     font-weight: 500;
@@ -76,9 +76,9 @@
 
 .lef-manag-revi-summary-count {
     align-items: center;
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     border-radius: 100rem;
-    color: var(--leb-white);
+    color: var(--lef-white);
     display: inline-flex;
     justify-content: center;
     min-width: 30px;
@@ -96,8 +96,8 @@
 .lef-manag-revi-search-box {
     flex: 1;
     align-items: center;
-    background: var(--leb-white);
-    border: 2px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 2px solid var(--lef-border-color);
     border-radius: 1rem;
     display: flex;
     gap: 1rem;
@@ -106,13 +106,13 @@
 }
 
 .lef-manag-revi-search-box.lef-manag-revi-search-focused {
-    border-color: var(--leb-primary-color);
-    box-shadow: var(--leb-focus-shadow);
+    border-color: var(--lef-primary-color);
+    box-shadow: var(--lef-focus-shadow);
 }
 
 .lef-manag-revi-search-icon {
     align-items: center;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: flex;
     width: 22px;
     height: auto;
@@ -127,7 +127,7 @@
     background: transparent;
     border: 0 !important;
     box-shadow: none !important;
-    color: var(--leb-text-color) !important;
+    color: var(--lef-text-color) !important;
     flex: 1;
     font-size: 1rem !important;
     outline: 0;
@@ -148,10 +148,10 @@
 
 .lef-manag-revi-search-clear {
     align-items: center;
-    background: var(--leb-bg-light);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-bg-light);
+    border: 1px solid var(--lef-border-color);
     border-radius: 100rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: none;
     justify-content: center;
     width: 30px;
@@ -170,8 +170,8 @@
 
 /* Tabs */
 .lef-manag-revi-tabs {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     display: grid;
     gap: 1rem;
@@ -183,7 +183,7 @@
     background: transparent;
     border: 0;
     border-radius: 1rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: inline-flex;
     font-size: 0.94rem;
     font-weight: 500;
@@ -195,42 +195,42 @@
 }
 
 .lef-manag-revi-tab:hover {
-    background: var(--leb-primary-light-bg);
-    color: var(--leb-secondary-color);
+    background: var(--lef-primary-light-bg);
+    color: var(--lef-secondary-color);
 }
 
 .lef-manag-revi-tab.lef-manag-revi-tab-active {
-    background: var(--leb-primary-color);
-    color: var(--leb-white);
+    background: var(--lef-primary-color);
+    color: var(--lef-white);
 }
 
 .lef-manag-revi-tab-count {
-    background: var(--leb-white);
+    background: var(--lef-white);
     border-radius: 100rem;
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
     font-size: 0.6rem;
     padding: 4px 10px;
 }
 
 /* List Area */
 .lef-manag-revi-list-shell {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
-    box-shadow: var(--leb-card-shadow);
+    box-shadow: var(--lef-card-shadow);
     overflow: hidden;
 }
 
 .lef-manag-revi-list-head {
     align-items: center;
-    border-bottom: 1px solid var(--leb-border-color);
+    border-bottom: 1px solid var(--lef-border-color);
     display: flex;
     justify-content: space-between;
     padding: 16px 18px;
 }
 
 .lef-manag-revi-list-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 1.2rem !important;
     font-weight: 500;
 }
@@ -252,7 +252,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 0.9rem;
     font-weight: 550;
     margin-right: 1rem;
@@ -272,10 +272,10 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: var(--leb-bg-light);
+    background: var(--lef-bg-light);
     padding: 4px;
     border-radius: 0.8rem;
-    border: 1px solid var(--leb-border-color);
+    border: 1px solid var(--lef-border-color);
 }
 
 .lef-manag-revi-bulk-select {
@@ -283,13 +283,13 @@
     border: 0 !important;
     font-size: 0.85rem !important;
     padding: 0 10px !important;
-    color: var(--leb-text-color) !important;
+    color: var(--lef-text-color) !important;
     cursor: pointer;
 }
 
 .lef-manag-revi-btn-primary {
-    background: var(--leb-primary-color);
-    color: var(--leb-white);
+    background: var(--lef-primary-color);
+    color: var(--lef-white);
 }
 
 .lef-manag-revi-btn-primary:hover {
@@ -297,8 +297,8 @@
 }
 
 .lef-manag-revi-btn-danger {
-    background: var(--leb-error-color);
-    color: var(--leb-white);
+    background: var(--lef-error-color);
+    color: var(--lef-white);
 }
 
 .lef-manag-revi-btn-danger:hover {
@@ -307,20 +307,20 @@
 
 .lef-manag-revi-btn-danger-outline {
     background: transparent;
-    border-color: var(--leb-error-color);
-    color: var(--leb-error-color);
+    border-color: var(--lef-error-color);
+    color: var(--lef-error-color);
 }
 
 .lef-manag-revi-btn-danger-outline:hover {
-    background: var(--leb-error-color);
-    color: var(--leb-white);
+    background: var(--lef-error-color);
+    color: var(--lef-white);
 }
 
 .lef-manag-revi-checkbox {
     width: 18px !important;
     height: 18px !important;
     cursor: pointer !important;
-    accent-color: var(--leb-primary-color);
+    accent-color: var(--lef-primary-color);
 }
 
 /* Checkbox in Card */
@@ -328,11 +328,11 @@
     display: flex;
     align-items: center;
     padding-right: 12px;
-    border-right: 1px solid var(--leb-border-color);
+    border-right: 1px solid var(--lef-border-color);
 }
 
 .lef-manag-revi-card {
-    border: 1px solid var(--leb-border-color);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     display: grid;
     gap: 1rem;
@@ -343,16 +343,16 @@
 }
 
 .lef-manag-revi-card:hover {
-    border-color: var(--leb-primary-color);
+    border-color: var(--lef-primary-color);
     transform: translateY(-1px);
 }
 
 .lef-manag-revi-sno {
     align-items: center;
-    background: var(--leb-primary-light-bg);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-primary-light-bg);
+    border: 1px solid var(--lef-border-color);
     border-radius: 100rem;
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
     display: flex;
     font-size: 0.9rem;
     font-weight: 500;
@@ -368,7 +368,7 @@
 }
 
 .lef-manag-revi-field-label {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: block;
     font-size: 0.85rem;
     font-weight: 400;
@@ -377,7 +377,7 @@
 }
 
 .lef-manag-revi-field-value {
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     display: block;
     font-size: 0.95rem;
     font-weight: 550;
@@ -396,18 +396,18 @@
 }
 
 .lef-manag-revi-status-badge[data-lef-manag-revi-status="pending"] {
-    background: var(--leb-warning-light-bg);
-    color: var(--leb-warning-color);
+    background: var(--lef-warning-light-bg);
+    color: var(--lef-warning-color);
 }
 
 .lef-manag-revi-status-badge[data-lef-manag-revi-status="approved"] {
-    background: var(--leb-success-light-bg);
-    color: var(--leb-success-color);
+    background: var(--lef-success-light-bg);
+    color: var(--lef-success-color);
 }
 
 .lef-manag-revi-status-badge[data-lef-manag-revi-status="rejected"] {
-    background: var(--leb-error-light-bg);
-    color: var(--leb-error-color);
+    background: var(--lef-error-light-bg);
+    color: var(--lef-error-color);
 }
 
 .lef-manag-revi-card-actions {
@@ -418,10 +418,10 @@
 
 .lef-manag-revi-view-btn {
     align-items: center;
-    background: var(--leb-primary-color);
-    border: 1px solid var(--leb-primary-color);
+    background: var(--lef-primary-color);
+    border: 1px solid var(--lef-primary-color);
     border-radius: 1rem;
-    color: var(--leb-white);
+    color: var(--lef-white);
     display: inline-flex;
     font-size: 0.8rem;
     font-weight: 500;
@@ -433,14 +433,14 @@
 }
 
 .lef-manag-revi-view-btn:hover {
-    color: var(--leb-white);
+    color: var(--lef-white);
     transform: translateY(-2px);
 }
 
 /* Pagination */
 .lef-manag-revi-pagination {
     align-items: center;
-    border-top: 1px solid var(--leb-border-color);
+    border-top: 1px solid var(--lef-border-color);
     display: flex;
     justify-content: space-between;
     padding: 16px 18px;
@@ -453,10 +453,10 @@
 
 .lef-manag-revi-page-btn {
     align-items: center;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 100rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: inline-flex;
     font-size: 0.8rem;
     font-weight: 500;
@@ -467,9 +467,9 @@
 }
 
 .lef-manag-revi-page-btn.lef-manag-revi-page-active {
-    background: var(--leb-primary-color);
-    color: var(--leb-white);
-    border-color: var(--leb-primary-color);
+    background: var(--lef-primary-color);
+    color: var(--lef-white);
+    border-color: var(--lef-primary-color);
 }
 
 .lef-manag-revi-page-btn:disabled {
@@ -491,9 +491,9 @@
 }
 
 .lef-manag-revi-empty-icon {
-    background: var(--leb-primary-light-bg);
+    background: var(--lef-primary-light-bg);
     border-radius: 50%;
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
     height: 64px;
     width: 64px;
     display: flex;
@@ -508,14 +508,14 @@
 }
 
 .lef-manag-revi-empty-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 1.2rem;
     font-weight: 600;
     margin: 0 0 4px 0;
 }
 
 .lef-manag-revi-empty-text {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 0.9rem;
     margin: 0;
 }

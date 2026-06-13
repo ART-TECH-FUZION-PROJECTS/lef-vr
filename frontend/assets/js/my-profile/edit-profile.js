@@ -382,12 +382,12 @@
             if (/[0-9]/.test(val)) score++;
             if (/[!@#$%^&*]/.test(val)) score++;
 
-            $segments.css('background', 'var(--leb-border-color)');
+            $segments.css('background', 'var(--lef-border-color)');
             const colors = [
-                'var(--leb-error-color)', 
-                'var(--leb-warning-color)', 
-                'var(--leb-info-color)', 
-                'var(--leb-success-color)'
+                'var(--lef-error-color)', 
+                'var(--lef-warning-color)', 
+                'var(--lef-info-color)', 
+                'var(--lef-success-color)'
             ];
             const labels = ['Weak', 'Fair', 'Good', 'Strong'];
 
@@ -446,7 +446,7 @@
                 if (!this.checkPasswordMatch(true)) valid = false;
                 
                 if (this.state.passwordScore < 3) {
-                    $('#lef-edit-prof-pass-hint').text('Password must be Strong or Good.').show().css('color', 'var(--leb-error-color)');
+                    $('#lef-edit-prof-pass-hint').text('Password must be Strong or Good.').show().css('color', 'var(--lef-error-color)');
                     valid = false;
                 }
             }

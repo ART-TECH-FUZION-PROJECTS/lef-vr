@@ -222,15 +222,8 @@ if (empty($_GET)) {
                     $images = array($fallback_img);
                 }
 
-                $type_display = $listing->type_name ? $listing->type_name : 'Property';
-                $loc_display = $listing->location_name ? $listing->location_name : 'Premium Location';
-                $title = sprintf("%s in %s", $type_display, $loc_display);
-
-                // Configurable Title Character Limit.
-                $title_limit = 35;
-                if (mb_strlen($title) > $title_limit) {
-                    $title = mb_substr($title, 0, $title_limit) . '..';
-                }
+                // Fetch and format the property title directly from the database using centralized helper.
+                $title = lef_format_property_title($listing->title);
 
                 $summary = sprintf("%d bedroom, %d bed", $listing->bedroom, $listing->bed);
                 $redirect_url = lef_get_secure_detail_url($listing->id);

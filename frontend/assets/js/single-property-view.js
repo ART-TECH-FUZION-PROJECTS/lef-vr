@@ -22,9 +22,11 @@
      * If the cookie is missing or incorrect, it reloads the page.
      * SKIP logic if in Elementor Preview/Editor to avoid breaking the tool.
      */
+    var isMismatch = false;
+
     (function () {
         // Skip for Elementor Preview
-        if (window.location.href.indexOf('elementor-preview') !== -1) {
+        if (window.location.href.indexOf('elementor-preview') !== -1 || window.location.href.indexOf('action=elementor') !== -1) {
             return;
         }
 
@@ -33,9 +35,26 @@
         var cookieValue = document.cookie.split('; ').find(row => row.startsWith('lef_device_view='));
         var storedMode = cookieValue ? cookieValue.split('=')[1] : null;
 
+        // Detect what view container the server actually rendered
+        var serverMode = document.getElementById('lef-spv-desktop') ? 'desktop' : (document.getElementById('lef-spv-mobile') ? 'mobile' : null);
+
+        // Update cookie if missing or outdated
         if (storedMode !== currentMode) {
             document.cookie = "lef_device_view=" + currentMode + "; path=/; max-age=" + (60 * 60 * 24 * 30);
-            window.location.reload();
+        }
+
+        // Only reload if there's a mismatch between the rendered view and actual screen width
+        isMismatch = !!(serverMode && serverMode !== currentMode);
+
+        if (isMismatch) {
+            var checkCookie = document.cookie.split('; ').find(row => row.startsWith('lef_device_view='));
+            var verifiedMode = checkCookie ? checkCookie.split('=')[1] : null;
+            if (verifiedMode === currentMode) {
+                if (window.LEF_Loader) {
+                    window.LEF_Loader.show();
+                }
+                window.location.reload();
+            }
         }
     })();
 
@@ -69,6 +88,11 @@
     // Initialization
     // ─────────────────────────────────────────────────────────────
     $(document).ready(function () {
+        // Fade out layout loader on success after a short delay
+        if (!isMismatch && window.LEF_Loader) {
+            window.LEF_Loader.hide(400);
+        }
+
         // Watch for resize crossing (requires reload for mode switch)
         $(window).on('resize', debounce(checkResizeCrossing, 200));
 
@@ -88,40 +112,6 @@
         initMobileBackButton();
         restoreBookingState();
     });
-
-
-    /* ==================== VIEW & RELOAD CONTROLLER ==================== */
-    /**
-     * Enforces page reloads when crossing the 800px breakpoint.
-     * Since the server only renders one view (Desktop or Mobile) based on cookies,
-     * a resize across the boundary requires a fresh server render.
-     */
-    const BREAKPOINT = 800;
-    const initialMode = window.innerWidth > BREAKPOINT ? 'desktop' : 'mobile';
-
-    function checkResizeCrossing() {
-        // Skip if in Elementor Preview
-        if (window.location.href.indexOf('elementor-preview') !== -1) {
-            return;
-        }
-
-        const currentMode = window.innerWidth > BREAKPOINT ? 'desktop' : 'mobile';
-        if (currentMode !== initialMode) {
-            // Crossed the breakpoint! Blank the screen and request reload as requested.
-            $('body').css('background', '#fff').html('<div id="lef-spv-reload-overlay" style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; text-align:center; font-family:var(--leb-font-main); background:#fff; color:var(--leb-text-color);"><h1 style="font-size:2.5rem; margin-bottom:1rem; font-weight:600;">Screen Resize Detected</h1><p style="font-size:1.6rem; margin-bottom:2rem; color:var(--leb-text-muted);">Please refresh the page to switch to ' + currentMode + ' view.</p><button onclick="window.location.reload();" style="padding:12px 28px; border-radius:12px; border:none; background:var(--leb-text-color); color:#fff; font-size:1.4rem; font-weight:500; cursor:pointer; transition: opacity 0.2s;">Refresh Page</button></div>');
-        }
-    }
-
-    /**
-     * Simple debounce to avoid excessive resize calls.
-     */
-    function debounce(fn, delay) {
-        let timer;
-        return function () {
-            clearTimeout(timer);
-            timer = setTimeout(fn, delay);
-        };
-    }
 
 
     /* ==================== SHARE ==================== */
@@ -162,21 +152,56 @@
         return '<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:16px;width:16px;stroke:currentcolor;stroke-width:2;overflow:visible;"><path d="m15.9998 28.6668c7.1667-4.8847 14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"></path></svg>';
     }
     function heartFilledSVG() {
-        return '<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:var(--leb-primary-color);height:16px;width:16px;stroke:var(--leb-primary-color);stroke-width:2;overflow:visible;"><path d="m15.9998 28.6668c7.1667-4.8847 14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"></path></svg>';
+        return '<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:var(--lef-primary-color);height:16px;width:16px;stroke:var(--lef-primary-color);stroke-width:2;overflow:visible;"><path d="m15.9998 28.6668c7.1667-4.8847 14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"></path></svg>';
     }
 
 
     /* ==================== PHOTO MODAL ==================== */
+    let galleryScrollPos = 0;
+    let isBodyLocked = false;
+
+    /**
+     * Locks background body scroll position and prevents scrolling.
+     */
+    function lockBodyScroll() {
+        if (isBodyLocked) return;
+        galleryScrollPos = window.pageYOffset || document.documentElement.scrollTop;
+        $('body').css({
+            position: 'fixed',
+            top: -galleryScrollPos + 'px',
+            left: '0',
+            width: '100%',
+            overflow: 'hidden'
+        });
+        isBodyLocked = true;
+    }
+
+    /**
+     * Restores background body scroll position and normal scrolling.
+     */
+    function unlockBodyScroll() {
+        if (!isBodyLocked) return;
+        $('body').css({
+            position: '',
+            top: '',
+            left: '',
+            width: '',
+            overflow: ''
+        });
+        isBodyLocked = false;
+        window.scrollTo(0, galleryScrollPos);
+    }
+
     function initPhotoModal() {
         $('#lef-spv-show-photos, .lefdk-img-cont img, .lefmb-img-cont img').on('click', function () {
             $('#lefg-photo-modal').css('display', 'flex');
-            $('body').css('overflow', 'hidden');
+            lockBodyScroll();
         });
 
         // Close via close button
         $('#lefg-close-photo-modal').on('click', function() {
             $('#lefg-photo-modal').css('display', 'none');
-            $('body').css('overflow', '');
+            unlockBodyScroll();
         });
 
     }
@@ -281,12 +306,12 @@
     /* ==================== MODAL HELPERS ==================== */
     function showModal(id) {
         $('#' + id).css('display', 'flex');
-        $('body').css('overflow', 'hidden');
+        lockBodyScroll();
     }
 
     function hideModal(id) {
         $('#' + id).css('display', 'none');
-        $('body').css('overflow', '');
+        unlockBodyScroll();
     }
 
     function initModalCloseButtons() {
@@ -878,6 +903,43 @@
     function escHtml(str) {
         if (!str) return '';
         return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    /* ==================== VIEW & RELOAD CONTROLLER ==================== */
+    /**
+     * Enforces page reloads when crossing the 800px breakpoint.
+     * Since the server only renders one view (Desktop or Mobile) based on cookies,
+     * a resize across the boundary requires a fresh server render.
+     */
+    const BREAKPOINT = 800;
+    const initialMode = window.innerWidth > BREAKPOINT ? 'desktop' : 'mobile';
+
+    function checkResizeCrossing() {
+        // Skip if in Elementor Preview
+        if (window.location.href.indexOf('elementor-preview') !== -1 || window.location.href.indexOf('action=elementor') !== -1) {
+            return;
+        }
+
+        const currentMode = window.innerWidth > BREAKPOINT ? 'desktop' : 'mobile';
+        if (currentMode !== initialMode) {
+            // Crossed the breakpoint! Set the cookie, show fullscreen loader, and trigger reload immediately.
+            document.cookie = "lef_device_view=" + currentMode + "; path=/; max-age=" + (60 * 60 * 24 * 30);
+            if (window.LEF_Loader) {
+                window.LEF_Loader.show();
+            }
+            window.location.reload();
+        }
+    }
+
+    /**
+     * Simple debounce to avoid excessive resize calls.
+     */
+    function debounce(fn, delay) {
+        let timer;
+        return function () {
+            clearTimeout(timer);
+            timer = setTimeout(fn, delay);
+        };
     }
 
 })(jQuery);

@@ -13,7 +13,7 @@
 .lef-section-title {
     font-size: 2.5rem;
     font-weight: 500;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
 }
 
 /* Property Grid */
@@ -27,8 +27,8 @@
     overflow: hidden;
     cursor: pointer;
     border-radius: 20px;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
 }
 
 .lef-property-card:hover .lef-card-image {
@@ -51,7 +51,7 @@
 
 .lef-card-image.lef-is-placeholder {
     object-fit: cover !important;
-    background: var(--leb-bg-light);
+    background: var(--lef-bg-light);
 }
 
 .lef-favorite-btn {
@@ -60,7 +60,7 @@
     right: 12px;
     width: 32px;
     height: 32px;
-    background: var(--leb-overlay-bg);
+    background: var(--lef-overlay-bg);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -74,13 +74,13 @@
     width: 18px;
     height: 18px;
     fill: none;
-    stroke: var(--leb-text-color);
+    stroke: var(--lef-text-color);
     stroke-width: 2;
 }
 
 .lef-favorite-btn.is-active svg {
-    fill: var(--leb-primary-color);
-    stroke: var(--leb-primary-color);
+    fill: var(--lef-primary-color);
+    stroke: var(--lef-primary-color);
 }
 
 /* Image Navigation */
@@ -90,14 +90,14 @@
     transform: translateY(-50%);
     width: 28px;
     height: 28px;
-    background: var(--leb-white);
+    background: var(--lef-white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.2s;
-    border: 1px solid var(--leb-border-color);
+    border: 1px solid var(--lef-border-color);
     z-index: 2;
 }
 
@@ -129,7 +129,7 @@
 
 .lef-property-summary {
     font-size: 1.35rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-weight: 400;
     line-height: 1.2;
 }
@@ -143,14 +143,14 @@
 
 .lef-price-period {
     font-weight: 400;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 /* Empty State */
 .lef-no-properties {
     padding: 10px 0;
     text-align: center;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 14px;
 }
 

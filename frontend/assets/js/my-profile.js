@@ -97,7 +97,7 @@
             $(document).trigger("lef_sidebar_screen_loaded", [screen]);
           } else {
             this.$bucket.html(
-              '<div class="lef-prof-error" style="padding: 20px; color: var(--leb-error-color);">Error loading screen. Please try again.</div>',
+              '<div class="lef-prof-error" style="padding: 20px; color: var(--lef-error-color);">Error loading screen. Please try again.</div>',
             );
             if (window.LEF_Toast)
               window.LEF_Toast.show(

@@ -17,16 +17,16 @@
     justify-content: flex-start;
     width: 100%;
     gap: 1rem;
-    background-color: var(--leb-white);
+    background-color: var(--lef-white);
     border-radius: 1rem;
-    border: solid 1px var(--leb-border-color);
-    box-shadow: var(--leb-card-shadow);
+    border: solid 1px var(--lef-border-color);
+    box-shadow: var(--lef-card-shadow);
     padding: 0.8rem;
 }
 
 .lef-db-header .svg-cont {
     display: flex;
-    background-color: var(--leb-primary-color);
+    background-color: var(--lef-primary-color);
     padding: 0.9rem;
     border-radius: 1rem;
 }
@@ -34,13 +34,13 @@
 .lef-db-header .svg-cont svg {
     width: 24px;
     height: 24px;
-    color: var(--leb-white);
+    color: var(--lef-white);
 }
 
 .lef-db-header h1 {
     font-size: 1.8rem;
     font-weight: 600;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     padding: 0 !important;
 }
 
@@ -57,10 +57,10 @@
     flex-wrap: nowrap;
     align-items: flex-start;
     justify-content: flex-start;
-    background-color: var(--leb-white);
+    background-color: var(--lef-white);
     border-radius: 1rem;
-    border: solid 1px var(--leb-border-color);
-    box-shadow: var(--leb-card-shadow);
+    border: solid 1px var(--lef-border-color);
+    box-shadow: var(--lef-card-shadow);
     padding: 1.3rem 1rem;
     gap: 1rem;
 }
@@ -68,7 +68,7 @@
 .lef-db-card h2.card-title {
     font-size: 1.2rem;
     font-weight: 550;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     margin: 0;
 }
 
@@ -79,7 +79,7 @@
     align-items: flex-start;
     justify-content: center;
     gap: 0.6rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 0.9rem;
 }
 
@@ -108,21 +108,21 @@
 }
 
 .lef-db-card .badge--success {
-    background-color: var(--leb-success-light-bg);
-    color: var(--leb-success-color);
-    border-color: var(--leb-success-color);
+    background-color: var(--lef-success-light-bg);
+    color: var(--lef-success-color);
+    border-color: var(--lef-success-color);
 }
 
 .lef-db-card .badge--error {
-    background-color: var(--leb-error-light-bg);
-    color: var(--leb-error-color);
-    border-color: var(--leb-error-color);
+    background-color: var(--lef-error-light-bg);
+    color: var(--lef-error-color);
+    border-color: var(--lef-error-color);
 }
 
 .lef-db-card .badge--pending {
-    background-color: var(--leb-warning-light-bg);
-    color: var(--leb-warning-color);
-    border-color: var(--leb-warning-color);
+    background-color: var(--lef-warning-light-bg);
+    color: var(--lef-warning-color);
+    border-color: var(--lef-warning-color);
 }
 
 .lef-db-card .actions {
@@ -131,7 +131,7 @@
     gap: 8px;
     flex-wrap: wrap;
     padding-top: 0.7rem;
-    border-top: 1px solid var(--leb-border-color);
+    border-top: 1px solid var(--lef-border-color);
     margin-top: 2px;
 }
 
@@ -159,16 +159,16 @@
 }
 
 .lef-db-card .actions .btn-refresh {
-    background: var(--leb-bg-light);
-    border-color: var(--leb-border-default);
-    color: var(--leb-secondary-color);
+    background: var(--lef-bg-light);
+    border-color: var(--lef-border-default);
+    color: var(--lef-secondary-color);
 }
 
 .lef-db-card .actions .btn-repair {
-    background: var(--leb-primary-color);
-    border-color: var(--leb-primary-color);
-    color: var(--leb-white);
-    box-shadow: 0 4px 10px var(--leb-primary-glow);
+    background: var(--lef-primary-color);
+    border-color: var(--lef-primary-color);
+    color: var(--lef-white);
+    box-shadow: 0 4px 10px var(--lef-primary-glow);
 }
 
 @media (max-width: 1100px) {

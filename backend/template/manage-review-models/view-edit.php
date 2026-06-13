@@ -86,7 +86,7 @@ $property_url = lef_get_secure_detail_url($review['property_id']);
                         </div>
                         <div class="lef-manag-revi-edit-detail-row" style="flex-direction: column; align-items: flex-start; gap: 8px;">
                             <span class="lef-manag-revi-edit-detail-label">Review text</span>
-                            <div class="lef-manag-revi-edit-text-box" style="background: var(--leb-bg-light); border: 1px solid var(--leb-border-color); border-radius: 8px; padding: 12px; width: 100%; box-sizing: border-box; line-height: 1.6; color: var(--leb-text-color);">
+                            <div class="lef-manag-revi-edit-text-box" style="background: var(--lef-bg-light); border: 1px solid var(--lef-border-color); border-radius: 8px; padding: 12px; width: 100%; box-sizing: border-box; line-height: 1.6; color: var(--lef-text-color);">
                                 <?php echo nl2br(esc_html($review['review'])); ?>
                             </div>
                         </div>

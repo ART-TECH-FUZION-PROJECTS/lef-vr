@@ -47,7 +47,7 @@ h1.lefdk-title {
 }
 
 .lefdk-h-btn:hover {
-    color: var(--leb-primary-dark);
+    color: var(--lef-primary-dark);
 }
 
 .lefdk-extra-cont svg {
@@ -98,7 +98,7 @@ h1.lefdk-title {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: var(--leb-white);
+    background-color: var(--lef-white);
     padding: 0.5rem;
     border-radius: 0.5rem;
     font-size: 1.4rem;
@@ -121,7 +121,7 @@ h1.lefdk-title {
 }
 
 .lefdk-details-cont.bottom-line {
-    border: solid var(--leb-border-default);
+    border: solid var(--lef-border-default);
     border-width: 0 0 1.5px 0;
 }
 
@@ -160,7 +160,7 @@ ol.lefdk-list-order {
 .lefdk-list {
     font-size: 1.45rem;
     font-weight: 500;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .lefdk-review {
@@ -185,7 +185,7 @@ ol.lefdk-list-order {
     align-items: center;
     gap: 1rem;
     padding: 0.8rem 0;
-    border: solid var(--leb-border-default);
+    border: solid var(--lef-border-default);
     border-width: 1.5px 0;
 }
 
@@ -193,8 +193,8 @@ ol.lefdk-list-order {
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: 100rem;
-    border: solid 1px var(--leb-border-default);
-    box-shadow: var(--leb-card-shadow);
+    border: solid 1px var(--lef-border-default);
+    box-shadow: var(--lef-card-shadow);
 }
 
 .lefdk-hd-photo img {
@@ -220,7 +220,7 @@ span.lefdk-hd-i-tag {
     font-size: 1.15rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 /* ── Description ── */
@@ -234,27 +234,27 @@ span.lefdk-hd-i-tag {
 }
 
 .lefdk-description p {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .lefdk-desc-btn,
 .lefdk-show-amenity-btn {
-    background-color: var(--leb-bg-light);
+    background-color: var(--lef-bg-light);
     padding: 1.4rem;
     border-radius: 10px;
     font-size: 1.4rem;
-    border: solid 1px var(--leb-border-color);
+    border: solid 1px var(--lef-border-color);
     cursor: pointer;
     line-height: 1.2;
     max-width: 160px;
     width: auto;
     text-align: center;
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
 }
 
 .lefdk-desc-btn:hover,
 .lefdk-show-amenity-btn:hover {
-    background-color: var(--leb-border-color);
+    background-color: var(--lef-border-color);
 }
 
 /* ── Amenities ── */
@@ -264,7 +264,7 @@ span.lefdk-hd-i-tag {
     flex-direction: column;
     gap: 1.9rem;
     padding: 2rem 0;
-    border: solid var(--leb-border-default);
+    border: solid var(--lef-border-default);
     border-width: 1.5px 0;
 }
 
@@ -331,10 +331,10 @@ span.lefdk-hd-i-tag {
 
 .lefdk-cal-month-container {
     width: 100%;
-    border: 1px solid var(--leb-border-default);
+    border: 1px solid var(--lef-border-default);
     border-radius: 12px;
     padding: 1.2rem 1rem;
-    background: var(--leb-white);
+    background: var(--lef-white);
     min-height: 320px;
 }
 
@@ -354,8 +354,8 @@ span.lefdk-hd-i-tag {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    border: 1px solid var(--leb-border-default);
-    background: var(--leb-white);
+    border: 1px solid var(--lef-border-default);
+    background: var(--lef-white);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -364,8 +364,8 @@ span.lefdk-hd-i-tag {
 }
 
 .lefdk-cal-nav-btn:hover {
-    background: var(--leb-bg-light);
-    border-color: var(--leb-primary-color);
+    background: var(--lef-bg-light);
+    border-color: var(--lef-primary-color);
 }
 
 .lefdk-cal-nav-btn svg {
@@ -404,18 +404,18 @@ span.lefdk-hd-i-tag {
 }
 
 .lefdk-cal-day:hover:not(.lefdk-cal-day-disabled):not(.lefdk-cal-day-blocked):not(.lefdk-cal-day-unav) {
-    background: var(--leb-text-color);
-    border: 1px solid var(--leb-text-color);
-    color: var(--leb-white);
+    background: var(--lef-text-color);
+    border: 1px solid var(--lef-text-color);
+    color: var(--lef-white);
 }
 
 .lefdk-cal-day-selected {
-    background: var(--leb-text-color) !important;
-    color: var(--leb-white) !important;
+    background: var(--lef-text-color) !important;
+    color: var(--lef-white) !important;
 }
 
 .lefdk-cal-day-in-range {
-    background-color: var(--leb-bg-light-2);
+    background-color: var(--lef-bg-light-2);
 }
 
 .lefdk-cal-day-unav {
@@ -430,7 +430,7 @@ span.lefdk-hd-i-tag {
 }
 
 .lefdk-cal-day-today {
-    border: 1px solid var(--leb-text-color);
+    border: 1px solid var(--lef-text-color);
 }
 
 span.lefdk-cal-clear-btn {
@@ -442,7 +442,7 @@ span.lefdk-cal-clear-btn {
 }
 
 span.lefdk-cal-clear-btn:hover {
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
 }
 
 /* ── Reservation Form (sticky right) ── */
@@ -459,9 +459,9 @@ span.lefdk-cal-clear-btn:hover {
 }
 
 .lefdk-l-form-cont {
-    background-color: var(--leb-white);
-    border: solid 1px var(--leb-border-color);
-    box-shadow: var(--leb-card-shadow);
+    background-color: var(--lef-white);
+    border: solid 1px var(--lef-border-color);
+    box-shadow: var(--lef-card-shadow);
     border-radius: 20px;
     padding: 1.5rem;
     width: 90%;
@@ -483,11 +483,11 @@ span.lefdk-cal-clear-btn:hover {
 
 span.lefdk-lf-price-unit {
     font-size: 1.7rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .lefdk-lf-dates {
-    border: 1px solid var(--leb-border-default);
+    border: 1px solid var(--lef-border-default);
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 1.4rem;
@@ -506,7 +506,7 @@ span.lefdk-lf-price-unit {
 }
 
 .lefdk-lf-date-field:first-child {
-    border-right: 1px solid var(--leb-border-default);
+    border-right: 1px solid var(--lef-border-default);
 }
 
 .lefdk-lf-date-field label,
@@ -521,13 +521,13 @@ span.lefdk-lf-price-unit {
 .lefdk-lf-date-field span,
 .lefdk-lf-guests span {
     font-size: 1.45rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .lefdk-lf-guests {
     width: 100%;
     padding: 0.8rem;
-    border: 1px solid var(--leb-border-default);
+    border: 1px solid var(--lef-border-default);
     border-radius: 12px;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -537,8 +537,8 @@ span.lefdk-lf-price-unit {
 .lefdk-lf-btn {
     width: 100%;
     padding: 0.8rem;
-    background: var(--leb-primary-color);
-    color: var(--leb-white);
+    background: var(--lef-primary-color);
+    color: var(--lef-white);
     border: none;
     border-radius: 10px;
     font-size: 1.7rem;
@@ -548,24 +548,24 @@ span.lefdk-lf-price-unit {
 }
 
 .lefdk-lf-btn:hover {
-    background: var(--leb-primary-dark);
+    background: var(--lef-primary-dark);
 }
 
 .lefdk-lf-info {
     margin-top: 1rem;
     font-size: 1.3rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     text-align: center;
 }
 
 /* ── Guest Dropdown ── */
 .lef-spv-guests-dropdown {
-    border: 1px solid var(--leb-border-default);
+    border: 1px solid var(--lef-border-default);
     border-radius: 12px;
     padding: 1rem;
     margin-bottom: 1rem;
-    background: var(--leb-white);
-    box-shadow: var(--leb-card-shadow);
+    background: var(--lef-white);
+    box-shadow: var(--lef-card-shadow);
 }
 
 .lef-spv-gd-row {
@@ -573,7 +573,7 @@ span.lefdk-lf-price-unit {
     align-items: center;
     justify-content: space-between;
     padding: 0.8rem 0;
-    border-bottom: 1px solid var(--leb-border-color);
+    border-bottom: 1px solid var(--lef-border-color);
 }
 
 .lef-spv-gd-row:last-child {
@@ -594,7 +594,7 @@ span.lefdk-lf-price-unit {
 
 .lef-spv-gd-sub {
     font-size: 1.2rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     line-height: 1;
 }
 
@@ -608,8 +608,8 @@ span.lefdk-lf-price-unit {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid var(--leb-border-default);
-    background: var(--leb-white);
+    border: 1px solid var(--lef-border-default);
+    background: var(--lef-white);
     font-size: 1.5rem;
     cursor: pointer;
     display: flex;
@@ -619,8 +619,8 @@ span.lefdk-lf-price-unit {
 }
 
 .lef-spv-gd-btn:hover {
-    border-color: var(--leb-primary-color);
-    background: var(--leb-primary-light-bg);
+    border-color: var(--lef-primary-color);
+    background: var(--lef-primary-light-bg);
 }
 
 .lef-spv-gd-count {
@@ -635,8 +635,8 @@ span.lefdk-lf-price-unit {
     display: inline-block;
     height: auto;
     width: 11px;
-    fill: var(--leb-text-color);
-    stroke: var(--leb-text-color);
+    fill: var(--lef-text-color);
+    stroke: var(--lef-text-color);
     stroke-width: 3;
     margin-right: 2px;
 }
@@ -646,7 +646,7 @@ span.lefdk-lf-price-unit {
     height: auto;
     width: 11px;
     fill: none;
-    stroke: var(--leb-text-color);
+    stroke: var(--lef-text-color);
     stroke-width: 3;
     margin-right: 2px;
 }
@@ -656,7 +656,7 @@ span.lefdk-lf-price-unit {
     padding: 2rem 1rem;
     flex-direction: column;
     gap: 1rem;
-    border: solid var(--leb-border-default);
+    border: solid var(--lef-border-default);
     border-width: 1.5px 0
 }
 
@@ -723,7 +723,7 @@ span.lefdk-lf-price-unit {
     font-size: 1.15rem;
     line-height: 10px;
     font-weight: 400;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .lefmb-rc-name {
@@ -735,14 +735,14 @@ span.lefdk-lf-price-unit {
 .lefmb-rc-user-tag {
     font-size: 1.1rem;
     font-weight: 400;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     line-height: 1;
 }
 
 .lefdk-rc-date {
     font-size: 1.25rem;
     font-weight: 500;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -764,11 +764,11 @@ span.lefdk-lf-price-unit {
     font-size: 1.4rem;
     line-height: 1.5;
     width: 90%;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .lef-spv-see-more {
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     text-decoration: underline;
     font-weight: 500;
     cursor: pointer;
@@ -777,7 +777,7 @@ span.lefdk-lf-price-unit {
 }
 
 .lef-spv-see-more:hover {
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     opacity: 0.8;
 }
 
@@ -809,8 +809,8 @@ span.lefdk-lf-price-unit {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 1px solid var(--leb-border-default);
-    background: var(--leb-white);
+    border: 1px solid var(--lef-border-default);
+    background: var(--lef-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -819,8 +819,8 @@ span.lefdk-lf-price-unit {
 }
 
 .lefdk-sm-nav-btn:hover {
-    background: var(--leb-bg-light);
-    border-color: var(--leb-text-color);
+    background: var(--lef-bg-light);
+    border-color: var(--lef-text-color);
 }
 
 .lefdk-sm-nav-btn svg {
@@ -852,7 +852,7 @@ span.lefdk-lf-price-unit {
     flex: 0 0 260px;
     scroll-snap-align: start;
     cursor: pointer;
-    color: var(--leb-text-color) !important;
+    color: var(--lef-text-color) !important;
     text-decoration: none !important;
     transition: color 0.3s ease;
 }
@@ -901,7 +901,7 @@ span.lefdk-lf-price-unit {
 
 .lefdk-sm-rc-price span {
     font-weight: 400;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .lefdk-sm-rc-rating {
@@ -937,8 +937,8 @@ span.lefdk-lf-price-unit {
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
-    box-shadow: var(--leb-card-shadow);
-    background-color: var(--leb-white);
+    box-shadow: var(--lef-card-shadow);
+    background-color: var(--lef-white);
     padding: 1rem 1.3rem;
     min-height: 60px;
 }
@@ -995,10 +995,10 @@ span.lefdk-lf-price-unit {
     position: absolute;
     top: 20px;
     right: 15px;
-    background: var(--leb-primary-dark);
+    background: var(--lef-primary-dark);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    color: var(--leb-white);
+    color: var(--lef-white);
     padding: 0.3rem 2rem;
     border-radius: 8px;
     font-size: 1.4rem;
@@ -1037,7 +1037,7 @@ span.lefdk-lf-price-unit {
     cursor: pointer;
     pointer-events: auto;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--leb-white);
+    color: var(--lef-white);
 }
 
 .lefmb-s-nav-btn:active {
@@ -1059,7 +1059,7 @@ span.lefdk-lf-price-unit {
     padding-bottom: 100px;
     border-radius: 22px;
     margin-top: -30px;
-    background-color: var(--leb-white);
+    background-color: var(--lef-white);
     gap: 3rem;
     z-index: 99;
 }
@@ -1091,7 +1091,7 @@ span.lefdk-lf-price-unit {
 .lefmb-prop-title {
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 
 }
 
@@ -1103,7 +1103,7 @@ span.lefdk-lf-price-unit {
     list-style: none;
     font-size: 1.3rem;
     font-weight: 400;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .lefmb-review {
@@ -1128,13 +1128,13 @@ span.lefdk-lf-price-unit {
     align-items: center;
     padding: 1rem 0rem;
     gap: 0.8rem;
-    border: solid var(--leb-border-default);
+    border: solid var(--lef-border-default);
     border-width: 1.4px 0;
 }
 
 .lefmb-hd-photo {
     border-radius: 100rem;
-    border: solid 1px var(--leb-border-default);
+    border: solid 1px var(--lef-border-default);
     overflow: hidden;
     aspect-ratio: 1 / 1;
 }
@@ -1161,7 +1161,7 @@ span.lefmb-hd-i-tag {
     font-size: 1.05rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 /* ── Mobile Description ── */
@@ -1172,18 +1172,18 @@ span.lefmb-hd-i-tag {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 24px;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     width: 100%;
 }
 
 .lefmb-desc-btn,
 .lefmb-show-amenity-btn {
-    background-color: var(--leb-bg-light);
-    color: var(--leb-text-color);
+    background-color: var(--lef-bg-light);
+    color: var(--lef-text-color);
     padding: 1rem;
     border-radius: 10px;
     font-size: 1.4rem;
-    border: solid 1px var(--leb-border-color);
+    border: solid 1px var(--lef-border-color);
     cursor: pointer;
     line-height: 20px;
     width: 100%;
@@ -1197,7 +1197,7 @@ span.lefmb-hd-i-tag {
     flex-direction: column;
     gap: 1.6rem;
     padding: 4rem 0;
-    border: solid var(--leb-border-default);
+    border: solid var(--lef-border-default);
     border-width: 1.5px 0;
 }
 
@@ -1236,7 +1236,7 @@ span.lefmb-hd-i-tag {
     padding: 3.5rem 0;
     flex-direction: column;
     gap: 1rem;
-    border: solid var(--leb-border-default);
+    border: solid var(--lef-border-default);
     border-width: 1.4px 0;
     width: 100%;
 }
@@ -1295,7 +1295,7 @@ span.lefmb-hd-i-tag {
 
 .lefmb-rc-date {
     font-size: 1rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -1314,7 +1314,7 @@ span.lefmb-hd-i-tag {
 
 .lefmb-rc-text {
     font-size: 1.4rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     line-height: 1.5;
     width: 95%;
 }
@@ -1333,9 +1333,9 @@ span.lefmb-hd-i-tag {
     bottom: 0;
     left: 0;
     padding: 1.2rem 2rem;
-    background-color: var(--leb-white);
+    background-color: var(--lef-white);
     width: 100%;
-    border: solid var(--leb-border-default);
+    border: solid var(--lef-border-default);
     border-width: 1.5px 0 0 0;
     display: flex;
     justify-content: space-between;
@@ -1356,15 +1356,15 @@ span.lefmb-hd-i-tag {
 }
 
 .lefmb-night-info {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1;
 }
 
 .lefmb-reserv-btn {
-    background-color: var(--leb-primary-color);
-    color: var(--leb-white);
+    background-color: var(--lef-primary-color);
+    color: var(--lef-white);
     border: none;
     padding: 0.9rem 4rem;
     border-radius: 100rem;
@@ -1374,7 +1374,7 @@ span.lefmb-hd-i-tag {
 }
 
 .lefmb-reserv-btn:hover {
-    background-color: var(--leb-primary-dark);
+    background-color: var(--lef-primary-dark);
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -1431,7 +1431,7 @@ span.lefmb-hd-i-tag {
 
 /* ====== POPUP MODEL =========== */
 .lef-spv-modal-inner {
-    background: var(--leb-white);
+    background: var(--lef-white);
     border-radius: 26px;
     max-width: 700px;
     width: 100%;
@@ -1443,7 +1443,7 @@ span.lefmb-hd-i-tag {
     display: inline-flex;
     align-items: center;
     gap: 1rem;
-    border-bottom: 1px solid var(--leb-border-color);
+    border-bottom: 1px solid var(--lef-border-color);
     position: sticky;
     top: 0;
     z-index: 1;
@@ -1466,15 +1466,15 @@ span.lefmb-hd-i-tag {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px var(--leb-border-default);
+    border: solid 1px var(--lef-border-default);
     border-radius: 50%;
     transition: background 0.2s;
-    background: var(--leb-bg-light);
+    background: var(--lef-bg-light);
 }
 
 .lef-spv-modal-close:hover {
-    background: var(--leb-primary-dark);
-    color: var(--leb-white);
+    background: var(--lef-primary-dark);
+    color: var(--lef-white);
 }
 
 .lef-spv-modal-body {
@@ -1487,7 +1487,7 @@ span.lefmb-hd-i-tag {
 .lef-spv-desc-full {
     font-size: 1.6rem;
     line-height: 1.7;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 
@@ -1500,7 +1500,7 @@ span.lefmb-hd-i-tag {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: var(--leb-white);
+    background: var(--lef-white);
     z-index: 10000;
     display: none;
     flex-direction: column;
@@ -1541,26 +1541,26 @@ span.lefmb-hd-i-tag {
 .lefg-gallery-title {
     font-size: 1.9rem !important;
     font-weight: 550 !important;
-    color: var(--leb-text-color) !important;
+    color: var(--lef-text-color) !important;
 }
 
 .lefg-close-btn {
     width: 40px !important;
     height: 40px !important;
     border-radius: 50% !important;
-    background: var(--leb-bg-light) !important;
+    background: var(--lef-bg-light) !important;
     border: none !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     cursor: pointer !important;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    color: var(--leb-text-color) !important;
+    color: var(--lef-text-color) !important;
 }
 
 .lefg-close-btn:hover {
-    background: var(--leb-text-color) !important;
-    color: var(--leb-white) !important;
+    background: var(--lef-text-color) !important;
+    color: var(--lef-white) !important;
     transform: rotate(90deg) !important;
 }
 
@@ -1573,7 +1573,7 @@ span.lefmb-hd-i-tag {
     flex: 1;
     overflow-y: auto;
     padding: 2rem;
-    background: var(--leb-white);
+    background: var(--lef-white);
 }
 
 .lefg-masonry-container {
@@ -1638,30 +1638,30 @@ span.lefmb-hd-i-tag {
 
 .lef-spv-star {
     font-size: 1.8rem;
-    color: var(--leb-border-default);
+    color: var(--lef-border-default);
     cursor: pointer;
     transition: color 0.15s;
 }
 
 .lef-spv-star.active,
 .lef-spv-star:hover {
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
 }
 
 #lef-spv-review-text {
     width: 100%;
-    border: 1px solid var(--leb-border-default);
+    border: 1px solid var(--lef-border-default);
     border-radius: 12px;
     padding: 1rem;
     font-size: 1.4rem;
-    font-family: var(--leb-font-main);
+    font-family: var(--lef-font-main);
     resize: vertical;
     margin-bottom: 1rem;
     min-height: 260px;
 }
 
 #lef-spv-review-text:focus {
-    border-color: var(--leb-primary-color) !important;
+    border-color: var(--lef-primary-color) !important;
     outline: none !important;
 }
 
@@ -1671,7 +1671,7 @@ span.lefmb-hd-i-tag {
 .lef-spv-cal-modal-box {
     max-width: 900px;
     width: 95%;
-    background: var(--leb-white);
+    background: var(--lef-white);
     border-radius: 24px;
     padding: 2.5rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
@@ -1696,7 +1696,7 @@ span.lefmb-hd-i-tag {
 
 .lefdk-cal-modal-header p {
     font-size: 1.2rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     margin: 0;
 }
 
@@ -1739,8 +1739,8 @@ span.lefmb-hd-i-tag {
 }
 
 .lefdk-cal-close-btn {
-    background: var(--leb-text-color);
-    color: var(--leb-white);
+    background: var(--lef-text-color);
+    color: var(--lef-white);
     border: none;
     padding: 0.5rem 2rem;
     border-radius: 8px;

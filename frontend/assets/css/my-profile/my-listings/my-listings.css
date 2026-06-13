@@ -1,4 +1,4 @@
-/* Note: Global variables like --leb-primary-color come from global.css */
+/* Note: Global variables like --lef-primary-color come from global.css */
 
 /* ─────────────────────────────────────────────────────────
    Common property for edit profile template
@@ -6,7 +6,7 @@
 .lef-host-list-p-m-b-common {
     padding-bottom: 2rem;
     margin-bottom: 2rem;
-    border-bottom: solid 1.5px var(--leb-border-color);
+    border-bottom: solid 1.5px var(--lef-border-color);
 }
 
 
@@ -29,9 +29,9 @@
 
 .lef-host-list-header-icon {
     align-items: center;
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     border-radius: 100rem;
-    color: var(--leb-white);
+    color: var(--lef-white);
     display: flex;
     flex: 0 0 auto;
     height: 44px;
@@ -50,7 +50,7 @@
 }
 
 .lef-host-list-entry {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -61,9 +61,9 @@
 
 .lef-host-list-add-btn {
     align-items: center;
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     border-radius: 8px;
-    color: var(--leb-white);
+    color: var(--lef-white);
     display: inline-flex;
     font-size: 1.4rem;
     font-weight: 500;
@@ -75,7 +75,7 @@
 
 .lef-host-list-add-btn:hover,
 .lef-host-list-add-btn:focus-visible {
-    background: var(--leb-primary-dark);
+    background: var(--lef-primary-dark);
     outline: 0;
     cursor: pointer;
     transform: translateY(-2px);
@@ -92,14 +92,14 @@
     display: flex;
     gap: 12px;
     margin-bottom: 2rem;
-    border: solid 1px var(--leb-border-color);
+    border: solid 1px var(--lef-border-color);
     border-radius: 1rem;
     padding: 1rem;
 }
 
 .lef-host-list-search-icon {
     align-items: center;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: flex;
     flex: 0 0 auto;
     justify-content: center;
@@ -113,7 +113,7 @@
 .lef-host-list-search-input {
     background: transparent;
     border: 0;
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     flex: 1;
     font-size: 1.4rem;
     font-weight: 400;
@@ -123,16 +123,16 @@
 }
 
 .lef-host-list-search-input::placeholder {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .lef-host-list-clear-btn {
     align-items: center;
-    background: var(--leb-bg-light);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-bg-light);
+    border: 1px solid var(--lef-border-color);
     border-radius: 100rem;
     padding: 2px;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: none;
     justify-content: center;
 }
@@ -142,9 +142,9 @@
 }
 
 .lef-host-list-clear-btn:hover {
-    background: var(--leb-primary-light-bg);
-    border-color: var(--leb-primary-color);
-    color: var(--leb-primary-color);
+    background: var(--lef-primary-light-bg);
+    border-color: var(--lef-primary-color);
+    color: var(--lef-primary-color);
 }
 
 .lef-host-list-clear-btn svg {
@@ -161,9 +161,9 @@
 .lef-host-list-tab {
     align-items: center;
     background: transparent;
-    border: solid 1px var(--leb-border-color);
+    border: solid 1px var(--lef-border-color);
     border-radius: 8px;
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     display: inline-flex;
     font-size: 1.4rem;
     font-weight: 400;
@@ -175,21 +175,21 @@
 }
 
 .lef-host-list-tab:hover {
-    background: var(--leb-primary-light-bg);
-    color: var(--leb-primary-color);
+    background: var(--lef-primary-light-bg);
+    color: var(--lef-primary-color);
 }
 
 .lef-host-list-tab.lef-host-list-tab-active {
-    background: var(--leb-primary-color);
-    color: var(--leb-white);
+    background: var(--lef-primary-color);
+    color: var(--lef-white);
 }
 
 .lef-host-list-tab-count {
     align-items: center;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-default);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-default);
     border-radius: 8px;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: inline-flex;
     font-size: 1rem;
     font-weight: 500;
@@ -205,7 +205,7 @@
     justify-content: space-between;
     gap: 1rem;
     flex-wrap: wrap;
-    border-bottom: 2px solid var(--leb-border-color);
+    border-bottom: 2px solid var(--lef-border-color);
     margin: 2rem 0rem;
     padding-bottom: 1rem;
 }
@@ -225,18 +225,18 @@
 .lef-host-list-bulk-select {
     padding: 0 1rem;
     border-radius: 6px;
-    border: 1px solid var(--leb-border-default);
+    border: 1px solid var(--lef-border-default);
     font-size: 1.2rem;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     width: 120px;
     min-height: 30px;
 }
 
 .lef-host-list-bulk-btn {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-default);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-default);
     border-radius: 6px;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     padding: 0.4rem 1rem;
     font-size: 1.2rem;
     font-weight: 400;
@@ -245,25 +245,25 @@
 }
 
 .lef-host-list-bulk-btn:hover {
-    background: var(--leb-primary-light-bg);
-    border-color: var(--leb-primary-color);
-    color: var(--leb-primary-color);
+    background: var(--lef-primary-light-bg);
+    border-color: var(--lef-primary-color);
+    color: var(--lef-primary-color);
 }
 
 .lef-host-list-bulk-delete {
-    color: var(--leb-error-color);
+    color: var(--lef-error-color);
 }
 
 .lef-host-list-bulk-delete:hover {
-    background: var(--leb-error-light-bg);
-    border-color: var(--leb-error-color);
-    color: var(--leb-error-color);
+    background: var(--lef-error-light-bg);
+    border-color: var(--lef-error-color);
+    color: var(--lef-error-color);
 }
 
 .lef-host-list-checkbox {
     appearance: none !important;
-    background: var(--leb-white);
-    border: 2px solid var(--leb-border-default) !important;
+    background: var(--lef-white);
+    border: 2px solid var(--lef-border-default) !important;
     border-radius: 4px;
     display: inline-grid !important;
     flex: 0 0 auto;
@@ -274,12 +274,12 @@
 }
 
 .lef-host-list-checkbox:focus-visible {
-    box-shadow: var(--leb-focus-shadow);
+    box-shadow: var(--lef-focus-shadow);
     outline: 0;
 }
 
 .lef-host-list-select-label {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1;
@@ -292,8 +292,8 @@
 
 .lef-host-list-card {
     position: relative;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-default);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-default);
     border-radius: 2rem;
     overflow: hidden;
     padding: 12px;
@@ -312,8 +312,8 @@ input.lef-host-list-row-checkbox {
 }
 
 .lef-host-list-thumb {
-    background: var(--leb-primary-light-bg);
-    border: 1px solid var(--leb-border-color) !important;
+    background: var(--lef-primary-light-bg);
+    border: 1px solid var(--lef-border-color) !important;
     border-radius: 8px !important;
     height: 50px !important;
     object-fit: cover;
@@ -329,9 +329,9 @@ input.lef-host-list-row-checkbox {
 
 .lef-host-list-sno {
     align-items: center;
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     border-radius: 100rem;
-    color: var(--leb-white);
+    color: var(--lef-white);
     display: inline-flex;
     font-size: 1.2rem;
     font-weight: 500;
@@ -343,7 +343,7 @@ input.lef-host-list-row-checkbox {
 }
 
 .lef-host-list-label {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 1.3rem;
     line-height: 1;
     font-weight: 500;
@@ -352,7 +352,7 @@ input.lef-host-list-row-checkbox {
 
 .lef-host-list-value {
     align-items: center;
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     display: flex;
     font-size: 1.3rem;
     font-weight: 500;
@@ -365,7 +365,7 @@ input.lef-host-list-row-checkbox {
 
 .lef-host-list-status {
     align-items: center;
-    border: 1px solid var(--leb-border-default);
+    border: 1px solid var(--lef-border-default);
     border-radius: 8px;
     display: inline-flex;
     font-size: 1rem;
@@ -378,24 +378,24 @@ input.lef-host-list-row-checkbox {
 }
 
 .lef-host-list-status[data-lef-host-list-status="published"] {
-    background: var(--leb-success-light-bg);
-    color: var(--leb-success-color);
+    background: var(--lef-success-light-bg);
+    color: var(--lef-success-color);
 }
 
 .lef-host-list-status[data-lef-host-list-status="pending"],
 .lef-host-list-status[data-lef-host-list-status="draft"] {
-    background: var(--leb-warning-light-bg);
-    color: var(--leb-warning-color);
+    background: var(--lef-warning-light-bg);
+    color: var(--lef-warning-color);
 }
 
 .lef-host-list-status[data-lef-host-list-status="rejected"] {
-    background: var(--leb-error-light-bg);
-    color: var(--leb-error-color);
+    background: var(--lef-error-light-bg);
+    color: var(--lef-error-color);
 }
 
 .lef-host-list-actions {
     align-items: center;
-    border-top: 1px solid var(--leb-border-color);
+    border-top: 1px solid var(--lef-border-color);
     display: flex;
     gap: 8px;
     justify-content: flex-end;
@@ -405,10 +405,10 @@ input.lef-host-list-row-checkbox {
 
 .lef-host-list-action-btn {
     align-items: center;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-default);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-default);
     border-radius: 8px;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     display: inline-flex;
     font-size: 1.1rem;
     font-weight: 500;
@@ -422,21 +422,21 @@ input.lef-host-list-row-checkbox {
 
 .lef-host-list-action-btn:hover,
 .lef-host-list-action-btn:focus-visible {
-    background: var(--leb-primary-light-bg);
-    border-color: var(--leb-primary-color);
-    color: var(--leb-primary-color);
+    background: var(--lef-primary-light-bg);
+    border-color: var(--lef-primary-color);
+    color: var(--lef-primary-color);
     outline: 0;
 }
 
 .lef-host-list-action-delete {
-    color: var(--leb-error-color);
+    color: var(--lef-error-color);
 }
 
 .lef-host-list-action-delete:hover,
 .lef-host-list-action-delete:focus-visible {
-    background: var(--leb-error-light-bg);
-    border-color: var(--leb-error-color);
-    color: var(--leb-error-color);
+    background: var(--lef-error-light-bg);
+    border-color: var(--lef-error-color);
+    color: var(--lef-error-color);
 }
 
 .lef-host-list-action-btn svg {
@@ -446,7 +446,7 @@ input.lef-host-list-row-checkbox {
 
 .lef-host-list-empty {
     align-items: center;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: none;
     flex-direction: column;
     gap: 8px;
@@ -461,13 +461,13 @@ input.lef-host-list-row-checkbox {
 }
 
 .lef-host-list-empty-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 2rem;
     font-weight: 600;
 }
 
 .lef-host-list-empty-text {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 1.3rem;
     font-weight: 400;
 }
@@ -482,7 +482,7 @@ input.lef-host-list-row-checkbox {
 }
 
 .lef-host-list-pagination-text {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -497,10 +497,10 @@ input.lef-host-list-row-checkbox {
 
 .lef-host-list-page-btn {
     align-items: center;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 8px;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: inline-flex;
     font-size: 1rem;
     font-weight: 500;
@@ -513,15 +513,15 @@ input.lef-host-list-row-checkbox {
 }
 
 .lef-host-list-page-btn:hover:not(:disabled) {
-    background: var(--leb-primary-light-bg);
-    border-color: var(--leb-primary-color);
-    color: var(--leb-primary-color);
+    background: var(--lef-primary-light-bg);
+    border-color: var(--lef-primary-color);
+    color: var(--lef-primary-color);
 }
 
 .lef-host-list-page-btn.lef-host-list-page-active {
-    background: var(--leb-primary-color);
-    border-color: var(--leb-primary-color);
-    color: var(--leb-white);
+    background: var(--lef-primary-color);
+    border-color: var(--lef-primary-color);
+    color: var(--lef-white);
 }
 
 .lef-host-list-page-btn:disabled {

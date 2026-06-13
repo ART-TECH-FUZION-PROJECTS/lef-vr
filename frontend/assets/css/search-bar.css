@@ -28,8 +28,8 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-default);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-default);
     border-radius: 100rem;
     box-shadow: 0 1px 8px rgba(0,0,0,0.08);
     position: relative;
@@ -51,7 +51,7 @@
 
 /* Bubbly Hover Fix: The replica uses a different pill approach */
 .search-field:hover {
-    background: var(--leb-bg-light);
+    background: var(--lef-bg-light);
 }
 
 .search-field label {
@@ -65,7 +65,7 @@
     border: none !important;
     background: transparent !important;
     font-size: 14px;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     outline: none !important;
     width: 100%;
     cursor: pointer;
@@ -74,7 +74,7 @@
 }
 
 .search-field input::placeholder {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 13px;
 }
 
@@ -93,7 +93,7 @@
     width: 20px;
     height: 20px;
     border: none;
-    background: var(--leb-border-default);
+    background: var(--lef-border-default);
     border-radius: 50%;
     cursor: pointer;
     display: none;
@@ -104,13 +104,13 @@
 }
 
 .field-clear-btn:hover {
-    background: var(--leb-text-muted);
+    background: var(--lef-text-muted);
 }
 
 .field-clear-btn svg {
     width: 10px;
     height: 10px;
-    stroke: var(--leb-text-color);
+    stroke: var(--lef-text-color);
     stroke-width: 2.5;
 }
 
@@ -119,8 +119,8 @@
 }
 
 .search-btn {
-    background: var(--leb-primary-color);
-    color: var(--leb-white);
+    background: var(--lef-primary-color);
+    color: var(--lef-white);
     border: none;
     width: 48px;
     height: 48px;
@@ -135,7 +135,7 @@
 }
 
 .search-btn:hover {
-    background: var(--leb-primary-dark);
+    background: var(--lef-primary-dark);
     transform: scale(1.05);
 }
 
@@ -150,12 +150,12 @@
 .search-popup {
     position: absolute;
     top: 80px;
-    background: var(--leb-white);
+    background: var(--lef-white);
     border-radius: 24px;
-    box-shadow: var(--leb-card-shadow);
+    box-shadow: var(--lef-card-shadow);
     width: 360px;
     padding: 10px;
-    z-index: 10000;
+    z-index: 99;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease, visibility 0.2s ease;
@@ -193,14 +193,14 @@
 }
 
 .suggestion-item:hover {
-    background: var(--leb-bg-light);
+    background: var(--lef-bg-light);
 }
 
 .suggestion-icon {
     width: 40px;
     height: 40px;
     border-radius: 12px;
-    background: var(--leb-bg-light);
+    background: var(--lef-bg-light);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,7 +210,7 @@
 .suggestion-icon svg {
     width: 20px;
     height: 20px;
-    stroke: var(--leb-text-color);
+    stroke: var(--lef-text-color);
     stroke-width: 2;
 }
 
@@ -222,14 +222,14 @@
 
 .suggestion-text span {
     font-size: 12px;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 /* ── Calendar (Desktop) ── */
 .calendar-wrapper {
     border-radius: 16px;
     padding: 10px;
-    background: var(--leb-white);
+    background: var(--lef-white);
 }
 
 .calendar-header {
@@ -247,8 +247,8 @@
 .calendar-nav-btn {
     width: 32px;
     height: 32px;
-    border: 1px solid var(--leb-border-color);
-    background: var(--leb-white);
+    border: 1px solid var(--lef-border-color);
+    background: var(--lef-white);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -258,13 +258,13 @@
 }
 
 .calendar-nav-btn:hover {
-    border-color: var(--leb-text-color);
+    border-color: var(--lef-text-color);
 }
 
 .calendar-nav-btn svg {
     width: 20px;
     height: 20px;
-    stroke: var(--leb-text-color);
+    stroke: var(--lef-text-color);
     stroke-width: 2.5;
 }
 
@@ -278,7 +278,7 @@
 .calendar-day-header {
     font-size: 11px;
     font-weight: 600;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     padding: 8px 0;
 }
 
@@ -295,17 +295,17 @@
 }
 
 .calendar-day:hover:not(:disabled):not(.selected) {
-    background: var(--leb-bg-light);
+    background: var(--lef-bg-light);
 }
 
 .calendar-day:disabled {
-    color: var(--leb-border-default);
+    color: var(--lef-border-default);
     cursor: not-allowed;
 }
 
 .calendar-day.selected {
-    background: var(--leb-primary-color) !important;
-    color: var(--leb-white);
+    background: var(--lef-primary-color) !important;
+    color: var(--lef-white);
 }
 
 .calendar-day.in-range {
@@ -314,7 +314,7 @@
 }
 
 .calendar-day.today {
-    border: 1px solid var(--leb-primary-color);
+    border: 1px solid var(--lef-primary-color);
 }
 
 .calendar-footer {
@@ -323,7 +323,7 @@
     gap: 12px;
     margin-top: 20px;
     padding-top: 16px;
-    border-top: 1px solid var(--leb-border-color);
+    border-top: 1px solid var(--lef-border-color);
 }
 
 .calendar-btn {
@@ -338,13 +338,13 @@
 .calendar-btn.clear {
     background: transparent;
     border: none;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .calendar-btn.apply {
-    background: var(--leb-text-color);
+    background: var(--lef-text-color);
     border: none;
-    color: var(--leb-white);
+    color: var(--lef-white);
 }
 
 /* ── Guests (Desktop) ── */
@@ -353,7 +353,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 16px 10px;
-    border-bottom: 1px solid var(--leb-border-color);
+    border-bottom: 1px solid var(--lef-border-color);
 }
 
 .guest-row:last-child {
@@ -368,7 +368,7 @@
 
 .guest-info p {
     font-size: 12px;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .guest-controls {
@@ -380,15 +380,15 @@
 .guest-btn {
     width: 36px;
     height: 36px;
-    border: 1px solid var(--leb-border-color);
-    background: var(--leb-white);
+    border: 1px solid var(--lef-border-color);
+    background: var(--lef-white);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .guest-count {
@@ -420,19 +420,19 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 100rem;
     padding: 12px 16px 12px 26px;
     cursor: pointer;
     width: 100%;
-    box-shadow: var(--leb-card-shadow);
+    box-shadow: var(--lef-card-shadow);
 }
 
 .mobile-search-trigger svg {
     width: 20px;
     height: 20px;
-    stroke: var(--leb-text-color);
+    stroke: var(--lef-text-color);
     stroke-width: 2;
     flex-shrink: 0;
 }
@@ -450,13 +450,13 @@
 
 .mobile-search-text span:last-child {
     font-size: 12px;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .mobile-search-icon {
     width: 40px;
     height: 40px;
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -465,7 +465,7 @@
 }
 
 .mobile-search-icon svg {
-    stroke: var(--leb-white);
+    stroke: var(--lef-white);
     width: 18px;
     height: 18px;
 }
@@ -478,8 +478,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--leb-white);
-    z-index: 2000;
+    background: var(--lef-white);
+    z-index: 200;
 }
 
 .mobile-modal-overlay.active {
@@ -491,7 +491,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 16px 20px;
-    border-bottom: 1px solid var(--leb-border-color);
+    border-bottom: 1px solid var(--lef-border-color);
 }
 
 .mobile-modal-back {
@@ -508,7 +508,7 @@
 .mobile-modal-back svg {
     width: 20px;
     height: 20px;
-    stroke: var(--leb-text-color);
+    stroke: var(--lef-text-color);
     stroke-width: 2.5;
 }
 
@@ -528,8 +528,8 @@
 
 .mobile-tabs {
     display: flex;
-    border-bottom: 1px solid var(--leb-border-color);
-    background: var(--leb-white);
+    border-bottom: 1px solid var(--lef-border-color);
+    background: var(--lef-white);
 }
 
 .mobile-tab {
@@ -538,13 +538,13 @@
     text-align: center;
     font-size: 14px;
     font-weight: 500;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     border-bottom: 2px solid transparent;
     cursor: pointer;
 }
 
 .mobile-tab.active {
-    border-bottom-color: var(--leb-text-color);
+    border-bottom-color: var(--lef-text-color);
 }
 
 .mobile-content {
@@ -566,8 +566,8 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    background: var(--leb-bg-light);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-bg-light);
+    border: 1px solid var(--lef-border-color);
     border-radius: 12px;
     padding: 14px 16px;
     margin-bottom: 16px;
@@ -576,7 +576,7 @@
 .mobile-location-input svg {
     width: 20px;
     height: 20px;
-    stroke: var(--leb-text-color);
+    stroke: var(--lef-text-color);
     stroke-width: 2;
     flex-shrink: 0;
 }
@@ -604,8 +604,8 @@
 .mobile-calendar-nav-btn {
     width: 36px;
     height: 36px;
-    border: 1px solid var(--leb-border-color);
-    background: var(--leb-white);
+    border: 1px solid var(--lef-border-color);
+    background: var(--lef-white);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -616,7 +616,7 @@
 .mobile-calendar-nav-btn svg {
     width: 20px;
     height: 20px;
-    stroke: var(--leb-text-color);
+    stroke: var(--lef-text-color);
     stroke-width: 2.5;
 }
 
@@ -625,15 +625,15 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: var(--leb-white);
+    background: var(--lef-white);
     padding: 16px 20px;
-    border-top: 1px solid var(--leb-border-color);
+    border-top: 1px solid var(--lef-border-color);
 }
 
 .mobile-search-btn {
     width: 100%;
-    background: var(--leb-primary-color);
-    color: var(--leb-white);
+    background: var(--lef-primary-color);
+    color: var(--lef-white);
     border: none;
     border-radius: 12px;
     padding: 10px;

@@ -19,7 +19,7 @@
 .lef-mp-my-wish-title {
     font-size: 2.2rem;
     font-weight: 550;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
 }
 
 .lef-mp-my-wish-actions {
@@ -32,8 +32,8 @@
 .lef-mp-my-wish-clear-btn,
 .lef-mp-my-wish-remove-btn-bulk {
     padding: 0.8rem 1.6rem;
-    background-color: var(--leb-white);
-    border: 1px solid var(--leb-border-color) !important;
+    background-color: var(--lef-white);
+    border: 1px solid var(--lef-border-color) !important;
     border-radius: 8px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -43,23 +43,23 @@
 }
 
 .lef-mp-my-wish-action-btn {
-    color: var(--leb-primary-color);
-    border-color: var(--leb-primary-color) !important;
+    color: var(--lef-primary-color);
+    border-color: var(--lef-primary-color) !important;
 }
 
 .lef-mp-my-wish-action-btn.is-active {
-    background-color: var(--leb-primary-color);
-    color: var(--leb-white);
+    background-color: var(--lef-primary-color);
+    color: var(--lef-white);
 }
 
 .lef-mp-my-wish-clear-btn {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .lef-mp-my-wish-remove-btn-bulk {
-    background-color: var(--leb-error-color);
-    color: var(--leb-white);
-    border-color: var(--leb-error-color) !important;
+    background-color: var(--lef-error-color);
+    color: var(--lef-white);
+    border-color: var(--lef-error-color) !important;
 }
 
 /* Checkbox Styles */
@@ -70,7 +70,7 @@
     z-index: 10;
     width: 24px;
     height: 24px;
-    background: var(--leb-white);
+    background: var(--lef-white);
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@
     width: 24px !important;
     height: 24px !important;
     cursor: pointer !important;
-    accent-color: var(--leb-primary-color);
+    accent-color: var(--lef-primary-color);
     min-width: 100% !important;
     border-radius: 4px !important;
     display: flex !important;
@@ -94,8 +94,8 @@
 
 /* Selection Mode Overrides */
 .lef-mp-my-wish-grid-selecting .lef-mp-my-wish-card {
-    border-color: var(--leb-primary-color);
-    box-shadow: 0 0 0 1px var(--leb-primary-color);
+    border-color: var(--lef-primary-color);
+    box-shadow: 0 0 0 1px var(--lef-primary-color);
 }
 
 .lef-mp-my-wish-grid-selecting .lef-mp-my-wish-fav-btn {
@@ -113,8 +113,8 @@
     overflow: hidden;
     cursor: pointer;
     border-radius: 20px;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     position: relative;
 }
 
@@ -138,7 +138,7 @@
 
 .lef-mp-my-wish-card-image.lef-is-placeholder {
     object-fit: cover !important;
-    background: var(--leb-bg-light);
+    background: var(--lef-bg-light);
 }
 
 .lef-mp-my-wish-fav-btn {
@@ -147,7 +147,7 @@
     right: 12px;
     width: 32px;
     height: 32px;
-    background: var(--leb-overlay-bg);
+    background: var(--lef-overlay-bg);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -161,13 +161,13 @@
     width: 18px;
     height: 18px;
     fill: none;
-    stroke: var(--leb-text-color);
+    stroke: var(--lef-text-color);
     stroke-width: 2;
 }
 
 .lef-mp-my-wish-fav-btn.is-active svg {
-    fill: var(--leb-primary-color);
-    stroke: var(--leb-primary-color);
+    fill: var(--lef-primary-color);
+    stroke: var(--lef-primary-color);
 }
 
 /* Image Navigation */
@@ -177,14 +177,14 @@
     transform: translateY(-50%);
     width: 28px;
     height: 28px;
-    background: var(--leb-white);
+    background: var(--lef-white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.2s;
-    border: 1px solid var(--leb-border-color);
+    border: 1px solid var(--lef-border-color);
     z-index: 2;
 }
 
@@ -216,7 +216,7 @@
 
 .lef-mp-my-wish-card-summary {
     font-size: 1.35rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-weight: 400;
     line-height: 1.2;
 }
@@ -230,14 +230,14 @@
 
 .lef-mp-my-wish-price-period {
     font-weight: 400;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 /* Empty State */
 .lef-mp-my-wish-empty {
     padding: 60px 0;
     text-align: center;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .lef-mp-my-wish-empty p {

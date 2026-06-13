@@ -3,7 +3,7 @@
  *
  * Styles for the Admin Dashboard page.
  * Prefix: lef-dash-
- * All colours reference global.css tokens (--leb-*).
+ * All colours reference global.css tokens (--lef-*).
  * Zero inline styles.
  *
  * @package ListingEngineFrontend
@@ -23,8 +23,8 @@
    Header
    ───────────────────────────────────────────────────────────── */
 .lef-dash-header {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     display: flex;
     align-items: center;
@@ -40,9 +40,9 @@
 }
 
 .lef-dash-header-icon {
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     border-radius: 1rem;
-    color: var(--leb-white);
+    color: var(--lef-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,14 +59,14 @@
 .lef-dash-title {
     font-size: 1.5rem !important;
     font-weight: 600 !important;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     line-height: 1.1 !important;
     margin: 0 !important;
     padding: 0 !important;
 }
 
 .lef-dash-subtitle {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 0.88rem;
     font-weight: 400;
     margin-top: 0.3rem;
@@ -74,7 +74,7 @@
 }
 
 .lef-dash-subtitle strong {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-weight: 600;
 }
 
@@ -91,8 +91,8 @@
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     padding: 1rem;
 }
@@ -101,7 +101,7 @@
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 1.15rem !important;
     font-weight: 600 !important;
     margin: 0 !important;
@@ -112,12 +112,12 @@
 .lef-dash-section-title svg {
     width: 18px;
     height: 18px;
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
     flex: 0 0 auto;
 }
 
 .lef-dash-section-desc {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 0.85rem;
     font-weight: 400;
 }
@@ -132,8 +132,8 @@
 }
 
 .lef-dash-nav-card {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     display: flex;
     align-items: center;
@@ -145,8 +145,8 @@
 }
 
 .lef-dash-nav-card:hover {
-    border-color: var(--leb-primary-color);
-    box-shadow: var(--leb-card-shadow);
+    border-color: var(--lef-primary-color);
+    box-shadow: var(--lef-card-shadow);
     transform: translateY(-2px);
 }
 
@@ -167,23 +167,23 @@
 }
 
 .lef-dash-nav-card-icon--primary {
-    background: var(--leb-primary-light-bg);
-    color: var(--leb-primary-color);
+    background: var(--lef-primary-light-bg);
+    color: var(--lef-primary-color);
 }
 
 .lef-dash-nav-card-icon--success {
-    background: var(--leb-success-light-bg);
-    color: var(--leb-success-color);
+    background: var(--lef-success-light-bg);
+    color: var(--lef-success-color);
 }
 
 .lef-dash-nav-card-icon--warning {
-    background: var(--leb-warning-light-bg);
-    color: var(--leb-warning-color);
+    background: var(--lef-warning-light-bg);
+    color: var(--lef-warning-color);
 }
 
 .lef-dash-nav-card-icon--info {
-    background: var(--leb-info-light-bg);
-    color: var(--leb-info-color);
+    background: var(--lef-info-light-bg);
+    color: var(--lef-info-color);
 }
 
 .lef-dash-nav-card-body {
@@ -192,7 +192,7 @@
 }
 
 .lef-dash-nav-card-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 1rem;
     font-weight: 600;
     margin: 0 !important;
@@ -200,7 +200,7 @@
 }
 
 .lef-dash-nav-card-desc {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 0.82rem;
     font-weight: 400;
     margin-top: 0.25rem;
@@ -208,7 +208,7 @@
 }
 
 .lef-dash-nav-card-arrow {
-    color: var(--leb-border-default);
+    color: var(--lef-border-default);
     flex: 0 0 auto;
     transition: color 0.2s ease, transform 0.2s ease;
 }
@@ -220,7 +220,7 @@
 }
 
 .lef-dash-nav-card:hover .lef-dash-nav-card-arrow {
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
     transform: translateX(3px);
 }
 
@@ -234,8 +234,8 @@
 }
 
 .lef-dash-doc-card {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -245,8 +245,8 @@
     align-items: center;
     gap: 1rem;
     padding: 1rem 1.2rem;
-    border-bottom: 1px solid var(--leb-border-color);
-    background: var(--leb-bg-light);
+    border-bottom: 1px solid var(--lef-border-color);
+    background: var(--lef-bg-light);
 }
 
 .lef-dash-doc-icon {
@@ -265,27 +265,27 @@
 }
 
 .lef-dash-doc-icon--primary {
-    background: var(--leb-primary-light-bg);
-    color: var(--leb-primary-color);
+    background: var(--lef-primary-light-bg);
+    color: var(--lef-primary-color);
 }
 
 .lef-dash-doc-icon--success {
-    background: var(--leb-success-light-bg);
-    color: var(--leb-success-color);
+    background: var(--lef-success-light-bg);
+    color: var(--lef-success-color);
 }
 
 .lef-dash-doc-icon--warning {
-    background: var(--leb-warning-light-bg);
-    color: var(--leb-warning-color);
+    background: var(--lef-warning-light-bg);
+    color: var(--lef-warning-color);
 }
 
 .lef-dash-doc-icon--info {
-    background: var(--leb-info-light-bg);
-    color: var(--leb-info-color);
+    background: var(--lef-info-light-bg);
+    color: var(--lef-info-color);
 }
 
 .lef-dash-doc-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 1rem !important;
     font-weight: 600 !important;
     margin: 0 !important;
@@ -300,7 +300,7 @@
 }
 
 .lef-dash-doc-desc {
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.6;
@@ -314,20 +314,20 @@
 }
 
 .lef-dash-doc-code-block {
-    background: var(--leb-bg-light);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-bg-light);
+    border: 1px solid var(--lef-border-color);
     border-radius: 0.75rem;
     overflow: hidden;
 }
 
 .lef-dash-doc-code-label {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 0.73rem;
     font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     padding: 0.4rem 0.8rem;
-    border-bottom: 1px solid var(--leb-border-color);
+    border-bottom: 1px solid var(--lef-border-color);
 }
 
 .lef-dash-doc-code-wrap {
@@ -341,7 +341,7 @@
 .lef-dash-doc-code {
     background: transparent;
     border: 0;
-    color: var(--leb-primary-dark);
+    color: var(--lef-primary-dark);
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.875rem;
     font-weight: 600;
@@ -350,10 +350,10 @@
 }
 
 .lef-dash-copy-btn {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 0.5rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -370,20 +370,20 @@
 }
 
 .lef-dash-copy-btn:hover {
-    background: var(--leb-primary-light-bg);
-    border-color: var(--leb-primary-color);
-    color: var(--leb-primary-color);
+    background: var(--lef-primary-light-bg);
+    border-color: var(--lef-primary-color);
+    color: var(--lef-primary-color);
 }
 
 .lef-dash-copy-btn.is-copied {
-    background: var(--leb-success-light-bg);
-    border-color: var(--leb-success-color);
-    color: var(--leb-success-color);
+    background: var(--lef-success-light-bg);
+    border-color: var(--lef-success-color);
+    color: var(--lef-success-color);
 }
 
 /* ── Parameter table ── */
 .lef-dash-doc-params-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 0.85rem !important;
     font-weight: 600 !important;
     margin: 0 0 0.5rem !important;
@@ -391,7 +391,7 @@
 }
 
 .lef-dash-doc-param-table {
-    border: 1px solid var(--leb-border-color);
+    border: 1px solid var(--lef-border-color);
     border-radius: 0.75rem;
     overflow: hidden;
 }
@@ -402,8 +402,8 @@
     gap: 0.5rem 1rem;
     padding: 0.5rem 0.8rem;
     font-size: 0.82rem;
-    border-bottom: 1px solid var(--leb-border-color);
-    color: var(--leb-text-color);
+    border-bottom: 1px solid var(--lef-border-color);
+    color: var(--lef-text-color);
     align-items: center;
 }
 
@@ -412,8 +412,8 @@
 }
 
 .lef-dash-doc-param-row--head {
-    background: var(--leb-bg-light);
-    color: var(--leb-text-muted);
+    background: var(--lef-bg-light);
+    color: var(--lef-text-muted);
     font-weight: 600;
     font-size: 0.76rem;
     text-transform: uppercase;
@@ -421,9 +421,9 @@
 }
 
 .lef-dash-doc-param-row code {
-    background: var(--leb-primary-light-bg);
+    background: var(--lef-primary-light-bg);
     border-radius: 4px;
-    color: var(--leb-primary-dark);
+    color: var(--lef-primary-dark);
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.78rem;
     font-weight: 600;
@@ -432,10 +432,10 @@
 
 /* ── Note / info block ── */
 .lef-dash-doc-note {
-    background: var(--leb-info-light-bg);
-    border-left: 3px solid var(--leb-info-color);
+    background: var(--lef-info-light-bg);
+    border-left: 3px solid var(--lef-info-color);
     border-radius: 0.5rem;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     display: flex;
     align-items: flex-start;
     gap: 0.5rem;
@@ -446,7 +446,7 @@
 }
 
 .lef-dash-doc-note svg {
-    color: var(--leb-info-color);
+    color: var(--lef-info-color);
     flex: 0 0 auto;
     width: 15px;
     height: 15px;
@@ -454,9 +454,9 @@
 }
 
 .lef-dash-doc-note code {
-    background: var(--leb-white);
+    background: var(--lef-white);
     border-radius: 4px;
-    color: var(--leb-primary-dark);
+    color: var(--lef-primary-dark);
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.78rem;
     font-weight: 600;
@@ -464,12 +464,12 @@
 }
 
 .lef-dash-doc-note--warning {
-    background: var(--leb-warning-light-bg);
-    border-left-color: var(--leb-warning-color);
+    background: var(--lef-warning-light-bg);
+    border-left-color: var(--lef-warning-color);
 }
 
 .lef-dash-doc-note--warning svg {
-    color: var(--leb-warning-color);
+    color: var(--lef-warning-color);
 }
 
 /* ─────────────────────────────────────────────────────────────

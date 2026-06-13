@@ -1,0 +1,89 @@
+/**
+ * loading-screen.css
+ *
+ * Fullscreen loading overlay styling and animations.
+ * Provides a generic UI component for displaying load status.
+ *
+ * @package ListingEngineFrontend
+ */
+
+/* ==================== FULLSCREEN LOADING OVERLAY ==================== */
+.lef-spv-loader-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: var(--lef-white);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 999999;
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.lef-spv-loader-overlay.hide {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.lef-spv-loader-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+	text-align: center;
+	font-family: var(--lef-font-main), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.lef-spv-loader-logo {
+	font-size: 4rem;
+	animation: lef-spv-bounce 2s infinite ease-in-out;
+}
+
+.lef-spv-loader-title {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: var(--lef-text-color);
+	margin: 0;
+	letter-spacing: -0.02em;
+}
+
+.lef-spv-loader-subtitle {
+	font-size: 1.4rem;
+	color: var(--lef-text-muted);
+	margin: 0;
+}
+
+.lef-spv-progress-container {
+	width: 220px;
+	height: 4px;
+	background: var(--lef-bg-light);
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+	margin-top: 1rem;
+}
+
+.lef-spv-progress-bar {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, var(--lef-primary-color, #ff385c), var(--lef-primary-dark, #e61e4d));
+	transform: translateX(-100%);
+	animation: lef-spv-loading 1.8s infinite cubic-bezier(0.4, 0, 0.2, 1);
+	border-radius: 4px;
+}
+
+@keyframes lef-spv-bounce {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(-10px); }
+}
+
+@keyframes lef-spv-loading {
+	0% { transform: translateX(-100%); }
+	50% { transform: translateX(-30%); }
+	100% { transform: translateX(100%); }
+}

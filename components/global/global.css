@@ -12,56 +12,56 @@
    Design Tokens
    ───────────────────────────────────────────────────────── */
 :root {
-    --leb-font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --lef-font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
     /* ── Brand / Primary Palette ── */
-    --leb-primary-color: #F15E74;
+    --lef-primary-color: #D97757;
     /* Coral red – buttons, accents */
-    --leb-primary-dark: #e8445e;
+    --lef-primary-dark: #C26143;
     /* Darker variant for gradients */
-    --leb-primary-glow: rgba(241, 94, 116, 0.25);
+    --lef-primary-glow: rgba(241, 94, 116, 0.25);
     /* Box-shadow tint */
-    --leb-primary-light-bg: #ffe6ea;
+    --lef-primary-light-bg: #ffe6ea;
     /* Soft red for focus rings */
 
     /* ── Secondary / Surface ── */
-    --leb-secondary-color: #2C3E50;
+    --lef-secondary-color: #2C3E50;
     /* Dark blue-grey – headings */
-    --leb-bg-light: #FAFAFA;
+    --lef-bg-light: #FAFAFA;
     /* Page background */
-    --leb-bg-light-2: #f1f1f1;
-    --leb-white: #ffffff;
+    --lef-bg-light-2: #f1f1f1;
+    --lef-white: #ffffff;
 
     /* ── Semantic Status Colors ── */
-    --leb-success-color: #16a34a;
-    --leb-success-light-bg: #d5ffe5;
-    --leb-warning-color: #f59e0b;
-    --leb-warning-light-bg: #fff2dc;
-    --leb-error-color: #ea0124;
-    --leb-error-light-bg: #ffe6ea;
-    --leb-info-color: #2563eb;
-    --leb-info-light-bg: #dbeafe;
+    --lef-success-color: #16a34a;
+    --lef-success-light-bg: #d5ffe5;
+    --lef-warning-color: #f59e0b;
+    --lef-warning-light-bg: #fff2dc;
+    --lef-error-color: #ea0124;
+    --lef-error-light-bg: #ffe6ea;
+    --lef-info-color: #2563eb;
+    --lef-info-light-bg: #dbeafe;
 
     /* ── Text ── */
-    --leb-text-color: #000000;
-    --leb-text-muted: #5a6e7c;
+    --lef-text-color: #000000;
+    --lef-text-muted: #5a6e7c;
     /* Soft grey for secondary text */
 
     /* ── Borders ── */
-    --leb-border-color: #e9eef3;
+    --lef-border-color: #e9eef3;
     /* Light border */
-    --leb-border-default: #e2e8f0;
+    --lef-border-default: #e2e8f0;
     /* Slightly darker border */
 
     /* ── Shadows ── */
-    --leb-card-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
-    --leb-focus-shadow: 0 0 0 4px var(--leb-primary-light-bg);
+    --lef-card-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+    --lef-focus-shadow: 0 0 0 4px var(--lef-primary-light-bg);
 
     /* ── Alpha / Transparency ── */
-    --leb-overlay-bg: rgba(255, 255, 255, 0.75);
-    --leb-overlay-dark: rgba(0, 0, 0, 0.15);
+    --lef-overlay-bg: rgba(255, 255, 255, 0.75);
+    --lef-overlay-dark: rgba(0, 0, 0, 0.15);
     /* Darker backdrop for modals */
-    --leb-white-alpha-40: rgba(255, 255, 255, 0.4);
+    --lef-white-alpha-40: rgba(255, 255, 255, 0.4);
 }
 
 /* ============================================
@@ -83,8 +83,8 @@
 
 .lef-global-plugin-wrapper {
     box-sizing: border-box !important;
-    color: var(--leb-text-color);
-    font-family: var(--leb-font-main);
+    color: var(--lef-text-color);
+    font-family: var(--lef-font-main);
     overflow-x: clip;
 }
 
@@ -105,5 +105,5 @@
 .lef-admin-notice-placeholder+.notice {
     margin: 5px 0 15px 0 !important;
     border-radius: 8px;
-    box-shadow: var(--leb-card-shadow);
+    box-shadow: var(--lef-card-shadow);
 }

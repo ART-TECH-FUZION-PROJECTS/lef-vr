@@ -4,7 +4,7 @@
 .lef-edit-prof-p-m-b-common {
     padding-bottom: 2rem;
     margin-bottom: 2rem;
-    border-bottom: solid 1px var(--leb-border-color);
+    border-bottom: solid 1px var(--lef-border-color);
 }
 
 /* ─────────────────────────────────────────────────────────
@@ -26,7 +26,7 @@
 .lef-edit-prof-panel-subtitle {
     font-size: 1.4rem;
     font-weight: 400;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
 }
 
 /* ─────────────────────────────────────────────────────────
@@ -40,7 +40,7 @@
 
 .lef-edit-prof-photo-preview {
     align-items: center;
-    border: 2px solid var(--leb-border-default);
+    border: 2px solid var(--lef-border-default);
     border-radius: 100rem;
     display: flex;
     flex: 0 0 auto;
@@ -66,24 +66,24 @@
 }
 
 .lef-edit-prof-photo-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1;
 }
 
 .lef-edit-prof-photo-text {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 1.2rem;
     font-weight: 400;
 }
 
 .lef-edit-prof-upload-btn {
     align-items: center;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-default);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-default);
     border-radius: 10px;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     display: inline-flex;
     font-size: 1.2rem;
     font-weight: 500;
@@ -97,9 +97,9 @@
 }
 
 .lef-edit-prof-upload-btn:hover {
-    background: var(--leb-primary-light-bg);
-    border-color: var(--leb-primary-color);
-    color: var(--leb-primary-color);
+    background: var(--lef-primary-light-bg);
+    border-color: var(--lef-primary-color);
+    color: var(--lef-primary-color);
 }
 
 .lef-edit-prof-upload-btn svg {
@@ -125,7 +125,7 @@
 }
 
 .lef-edit-prof-label {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: block;
     font-size: 1.4rem;
     font-weight: 400;
@@ -134,10 +134,10 @@
 }
 
 .lef-edit-prof-input {
-    background: var(--leb-white);
-    border: 2px solid var(--leb-border-default) !important;
+    background: var(--lef-white);
+    border: 2px solid var(--lef-border-default) !important;
     border-radius: 10px !important;
-    color: var(--leb-text-color) !important;
+    color: var(--lef-text-color) !important;
     font-size: 1.4rem !important;
     font-weight: 500;
     min-height: 50px !important;
@@ -148,12 +148,12 @@
 }
 
 .lef-edit-prof-input:focus {
-    border-color: var(--leb-primary-color) !important;
+    border-color: var(--lef-primary-color) !important;
 }
 
 .lef-edit-prof-input:disabled {
-    background: var(--leb-bg-light);
-    color: var(--leb-text-muted);
+    background: var(--lef-bg-light);
+    color: var(--lef-text-muted);
     cursor: not-allowed;
     border-style: dashed;
 }
@@ -181,7 +181,7 @@
 }
 
 .lef-edit-prof-help {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 1.2rem;
     font-weight: 400;
     margin-top: 8px;
@@ -209,8 +209,8 @@
     top: 100%;
     left: 0;
     min-width: 220px;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     z-index: 50;
@@ -235,7 +235,7 @@
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     cursor: pointer;
     padding: 5px;
     display: flex;
@@ -255,7 +255,7 @@
 
 .lef-edit-prof-strength-meter {
     height: 6px;
-    background: var(--leb-border-color);
+    background: var(--lef-border-color);
     border-radius: 6px;
     overflow: hidden;
     display: flex;
@@ -265,7 +265,7 @@
 .strength-segment {
     flex: 1;
     height: 100%;
-    background: var(--leb-border-color);
+    background: var(--lef-border-color);
     transition: background 0.3s ease;
 }
 
@@ -282,10 +282,10 @@
 
 .lef-edit-prof-save-btn {
     align-items: center;
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color) !important;
     border: none !important;
     border-radius: 12px;
-    color: var(--leb-white) !important;
+    color: var(--lef-white) !important;
     display: inline-flex !important;
     font-size: 1.4rem !important;
     font-weight: 500 !important;
@@ -298,9 +298,9 @@
 }
 
 .lef-edit-prof-save-btn:hover {
-    background: var(--leb-primary-dark);
+    background: var(--lef-primary-dark) !important;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px var(--leb-primary-glow);
+    box-shadow: 0 8px 25px var(--lef-primary-glow);
 }
 
 .lef-edit-prof-save-btn svg {
@@ -311,7 +311,7 @@
 /* ── OTP Overlay ── */
 .lef-edit-prof-otp-overlay {
     align-items: center;
-    background: var(--leb-overlay-dark);
+    background: var(--lef-overlay-dark);
     backdrop-filter: blur(5px);
     display: none;
     inset: 0;
@@ -326,7 +326,7 @@
 }
 
 .lef-edit-prof-otp-dialog {
-    background: var(--leb-white);
+    background: var(--lef-white);
     border-radius: 20px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     max-width: 460px;
@@ -348,14 +348,14 @@
 }
 
 .lef-edit-prof-otp-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 2rem;
     font-weight: 500;
     margin: 0;
 }
 
 .lef-edit-prof-otp-text {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 1.2rem;
     font-weight: 400;
     margin-top: 3px;
@@ -375,25 +375,25 @@
 .lef-edit-prof-otp-timer {
     font-size: 1.2rem;
     font-weight: 400;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     margin-top: 6px;
 }
 
 .lef-edit-prof-otp-close {
     display: flex;
-    background: var(--leb-bg-light);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-bg-light);
+    border: 1px solid var(--lef-border-color);
     border-radius: 100rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     cursor: pointer;
     padding: 6px;
     transition: all 0.2s ease;
 }
 
 .lef-edit-prof-otp-close:hover {
-    color: var(--leb-primary-color);
-    background: var(--leb-primary-light-bg);
-    border-color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
+    background: var(--lef-primary-light-bg);
+    border-color: var(--lef-primary-color);
 }
 
 .lef-edit-prof-otp-close svg {
@@ -403,7 +403,7 @@
 
 .lef-edit-prof-otp-submit {
     width: 100%;
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     color: white !important;
     border: none !important;
     border-radius: 1rem;
@@ -415,13 +415,13 @@
 }
 
 .lef-edit-prof-otp-submit:hover {
-    background: var(--leb-primary-dark);
-    box-shadow: 0 8px 20px var(--leb-primary-glow);
+    background: var(--lef-primary-dark);
+    box-shadow: 0 8px 20px var(--lef-primary-glow);
 }
 
 /* ── Field Errors ── */
 .lef-edit-prof-field-error {
-    color: var(--leb-error-color);
+    color: var(--lef-error-color);
     font-size: 1.2rem;
     font-weight: 400;
     margin-top: 6px;
@@ -442,16 +442,16 @@
     transition: background 0.2s ease;
     font-size: 1.35rem;
     font-weight: 500;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
 }
 
 .lef-edit-prof-country-item:hover {
-    background: var(--leb-bg-light);
+    background: var(--lef-bg-light);
 }
 
 .lef-edit-prof-country-item span:last-child {
     margin-left: auto;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 1rem;
 }
 
@@ -463,7 +463,7 @@
 
 .lef-edit-prof-progress-bar-container {
     height: 8px;
-    background: var(--leb-border-color);
+    background: var(--lef-border-color);
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 8px;
@@ -472,7 +472,7 @@
 .lef-edit-prof-upload-progress-fill {
     width: 0%;
     height: 100%;
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     transition: width 0.3s ease;
 }
 
@@ -485,14 +485,14 @@
 .lef-edit-prof-upload-status-text {
     font-size: 0.78rem;
     font-weight: 700;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .lef-edit-prof-upload-retry {
     display: none;
     background: none;
     border: none;
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
     font-size: 0.78rem;
     font-weight: 800;
     cursor: pointer;

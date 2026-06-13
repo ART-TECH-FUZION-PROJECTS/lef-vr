@@ -4,7 +4,7 @@
 .lef-payout-p-m-b-common {
     padding-bottom: 2rem;
     margin-bottom: 2rem;
-    border-bottom: solid 1px var(--leb-border-color);
+    border-bottom: solid 1px var(--lef-border-color);
 }
 
 /* ─────────────────────────────────────────────────────────
@@ -20,14 +20,14 @@
 }
 
 .lef-payout-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 2rem;
     font-weight: 500;
     line-height: 1;
 }
 
 .lef-payout-subtitle {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 1.2rem;
     font-weight: 400;
     margin-top: 6px;
@@ -35,10 +35,10 @@
 
 .lef-payout-badge {
     align-items: center;
-    background: var(--leb-primary-light-bg);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-primary-light-bg);
+    border: 1px solid var(--lef-border-color);
     border-radius: 8px;
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
     display: inline-flex;
     font-size: 1.4rem;
     font-weight: 500;
@@ -48,10 +48,10 @@
 
 .lef-payout-info {
     align-items: center;
-    background: var(--leb-info-light-bg);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-info-light-bg);
+    border: 1px solid var(--lef-border-color);
     border-radius: 10px;
-    color: var(--leb-info-color);
+    color: var(--lef-info-color);
     display: flex;
     font-size: 1.4rem;
     font-weight: 500;
@@ -81,7 +81,7 @@
 }
 
 .lef-payout-label {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: block;
     font-size: 1.4rem;
     font-weight: 400;
@@ -90,10 +90,10 @@
 }
 
 .lef-payout-input {
-    background: var(--leb-white);
-    border: 1.4px solid var(--leb-border-default) !important;
+    background: var(--lef-white);
+    border: 1.4px solid var(--lef-border-default) !important;
     border-radius: 10px !important;
-    color: var(--leb-text-color) !important;
+    color: var(--lef-text-color) !important;
     font-size: 1.4rem !important;
     font-weight: 500;
     min-height: 40px !important;
@@ -104,18 +104,18 @@
 }
 
 .lef-payout-input:focus {
-    border-color: var(--leb-primary-color);
-    box-shadow: var(--leb-focus-shadow);
+    border-color: var(--lef-primary-color);
+    box-shadow: var(--lef-focus-shadow);
 }
 
 .lef-payout-input::placeholder {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     opacity: 0.7;
 }
 
 /* ── Validation Errors ── */
 .lef-payout-field-error {
-    color: var(--leb-error-color);
+    color: var(--lef-error-color);
     font-size: 1.2rem;
     font-weight: 500;
     margin-top: 8px;
@@ -149,10 +149,10 @@
 
 .lef-payout-save-btn {
     align-items: center;
-    background: var(--leb-primary-color);
-    border: 1px solid var(--leb-primary-color) !important;
+    background: var(--lef-primary-color);
+    border: 1px solid var(--lef-primary-color) !important;
     border-radius: 12px;
-    color: var(--leb-white) !important;
+    color: var(--lef-white) !important;
     display: inline-flex !important;
     font-size: 1.3rem !important;
     font-weight: 500 !important;
@@ -165,10 +165,10 @@
 }
 
 .lef-payout-save-btn:hover {
-    background: var(--leb-primary-dark);
-    border-color: var(--leb-primary-dark);
+    background: var(--lef-primary-dark);
+    border-color: var(--lef-primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px var(--leb-primary-glow);
+    box-shadow: 0 8px 25px var(--lef-primary-glow);
 }
 
 .lef-payout-save-btn svg {

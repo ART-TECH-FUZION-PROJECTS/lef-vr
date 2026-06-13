@@ -284,7 +284,7 @@ $display_name = $current_user->display_name ?: $current_user->user_login;
                             On submit, the search bar redirects the user to the Listing View page with the selected filters pre-applied.
                         </div>
 
-                        <div class="lef-dash-doc-note" style="margin-top: 15px; border-left-color: var(--leb-primary-color); background: var(--leb-bg-light);">
+                        <div class="lef-dash-doc-note" style="margin-top: 15px; border-left-color: var(--lef-primary-color); background: var(--lef-bg-light);">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <line x1="12" y1="16" x2="12" y2="12"></line>

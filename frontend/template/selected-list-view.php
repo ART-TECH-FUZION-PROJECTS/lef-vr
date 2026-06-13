@@ -41,7 +41,7 @@ $location_slug = sanitize_text_field($atts['location']);
 $type_slug     = sanitize_text_field($atts['type']);
 
 // ── CONFIGURATION ──
-$title_char_limit = 35; // Max characters for property title (Type in Location)
+// Note: The property title character limit is centrally defined in includes/helpers.php via lef_format_property_title().
 
 // 2. Lookup IDs from names if provided.
 $location_id = 0;
@@ -142,13 +142,8 @@ if (! empty($location_slug) || ! empty($type_slug)) {
                         $main_image = ! empty($images) ? $images[0] : $fallback_img;
                         $is_placeholder = empty($images);
 
-                        $type_display = $listing->type_name ? $listing->type_name : 'Property';
-                        $loc_display  = $listing->location_name ? $listing->location_name : 'Premium Location';
-                        $title        = sprintf("%s in %s", $type_display, $loc_display);
-
-                        if (mb_strlen($title) > $title_char_limit) {
-                            $title = mb_substr($title, 0, $title_char_limit) . '..';
-                        }
+                        // Fetch and format the property title directly from the database using centralized helper.
+                        $title = lef_format_property_title($listing->title);
 
                         $summary = sprintf("%d bedroom, %d bed", $listing->bedroom, $listing->bed);
                         $redirect_url = lef_get_secure_detail_url($listing->id);

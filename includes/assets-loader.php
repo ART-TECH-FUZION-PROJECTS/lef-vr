@@ -102,17 +102,30 @@ function lef_enqueue_assets() {
 
 			/* ── CSS ── */
 			wp_enqueue_style(
+				'lef-loading-screen',
+				LEF_PLUGIN_URL . 'components/loading-screen/loading-screen.css',
+				array(),
+				filemtime( LEF_PLUGIN_DIR . 'components/loading-screen/loading-screen.css' )
+			);
+			wp_enqueue_style(
 				'lef-single-property-view',
 				LEF_PLUGIN_URL . 'frontend/assets/css/single-property-view.css',
-				array( 'lef-global-styles' ),
+				array( 'lef-global-styles', 'lef-loading-screen' ),
 				filemtime( LEF_PLUGIN_DIR . 'frontend/assets/css/single-property-view.css' )
 			);
 
 			/* ── JS ── */
 			wp_enqueue_script(
+				'lef-loading-screen-js',
+				LEF_PLUGIN_URL . 'components/loading-screen/loading-screen.js',
+				array(),
+				filemtime( LEF_PLUGIN_DIR . 'components/loading-screen/loading-screen.js' ),
+				true
+			);
+			wp_enqueue_script(
 				'lef-single-property-view-js',
 				LEF_PLUGIN_URL . 'frontend/assets/js/single-property-view.js',
-				array( 'jquery' ),
+				array( 'jquery', 'lef-loading-screen-js' ),
 				filemtime( LEF_PLUGIN_DIR . 'frontend/assets/js/single-property-view.js' ),
 				true
 			);

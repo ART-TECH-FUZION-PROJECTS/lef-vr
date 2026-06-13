@@ -14,7 +14,7 @@
     justify-content: space-between;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    border: solid var(--leb-border-color);
+    border: solid var(--lef-border-color);
     border-width: 0 0 1px 0;
 }
 
@@ -26,9 +26,9 @@
 
 .lef-my-book-title-icon {
     align-items: center;
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     border-radius: 10px;
-    color: var(--leb-white);
+    color: var(--lef-white);
     display: flex;
     height: 45px;
     width: 45px;
@@ -41,7 +41,7 @@
 }
 
 .lef-my-book-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 2.2rem;
     font-weight: 500;
     margin: 0;
@@ -50,10 +50,10 @@
 
 .lef-my-book-summary {
     align-items: center;
-    background: var(--leb-primary-light-bg);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-primary-light-bg);
+    border: 1px solid var(--lef-border-color);
     border-radius: 10px;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     display: inline-flex;
     font-size: 1.2rem;
     font-weight: 500;
@@ -62,9 +62,9 @@
 }
 
 .lef-my-book-summary-count {
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     border-radius: 100rem;
-    color: var(--leb-white);
+    color: var(--lef-white);
     padding: 4px 10px;
     min-width: 20px;
     text-align: center;
@@ -80,8 +80,8 @@
 
 .lef-my-book-search-box {
     align-items: center;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     display: flex;
     gap: 0.6rem;
@@ -90,14 +90,14 @@
 }
 
 .lef-my-book-search-box.is-focused {
-    border-color: var(--leb-primary-color);
-    box-shadow: var(--leb-focus-shadow);
+    border-color: var(--lef-primary-color);
+    box-shadow: var(--lef-focus-shadow);
 }
 
 .lef-my-book-search-input {
     background: transparent;
     border: 0;
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     flex: 1;
     font-size: 1.4rem;
     font-weight: 400;
@@ -106,7 +106,7 @@
 }
 
 .lef-my-book-search-icon {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: flex;
     align-items: center;
     width: 20px;
@@ -120,8 +120,8 @@
 
 /* ── Tabs ── */
 .lef-my-book-tabs {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     display: grid;
     gap: 8px;
@@ -134,7 +134,7 @@
     background: transparent;
     border: 0;
     border-radius: 10px;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: flex;
     font-size: 1.4rem;
     font-weight: 400;
@@ -146,18 +146,18 @@
 }
 
 .lef-my-book-tab:hover {
-    background: var(--leb-primary-light-bg);
-    color: var(--leb-primary-color);
+    background: var(--lef-primary-light-bg);
+    color: var(--lef-primary-color);
 }
 
 .lef-my-book-tab.is-active {
-    background: var(--leb-primary-color);
-    color: var(--leb-white);
+    background: var(--lef-primary-color);
+    color: var(--lef-white);
 }
 
 .lef-my-book-tab-count {
-    background: var(--leb-white);
-    color: var(--leb-text-color);
+    background: var(--lef-white);
+    color: var(--lef-text-color);
     border: 0;
     border-radius: 100rem;
     font-size: 1rem;
@@ -166,8 +166,8 @@
 
 /* ── List ── */
 .lef-my-book-list-shell {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     overflow: hidden;
     position: relative;
@@ -176,7 +176,7 @@
 
 .lef-my-book-list-head {
     align-items: center;
-    border-bottom: 1px solid var(--leb-border-color);
+    border-bottom: 1px solid var(--lef-border-color);
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -184,7 +184,7 @@
 }
 
 .lef-my-book-list-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-weight: 500;
     font-size: 1.8rem;
 }
@@ -196,8 +196,8 @@
 }
 
 .lef-my-book-card {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 10px;
     display: grid;
     gap: 1rem;
@@ -209,15 +209,15 @@
 }
 
 .lef-my-book-card:hover {
-    border-color: var(--leb-primary-color);
+    border-color: var(--lef-primary-color);
     transform: translateY(-2px);
 }
 
 .lef-my-book-sno {
     align-items: center;
-    background: var(--leb-primary-light-bg);
+    background: var(--lef-primary-light-bg);
     border-radius: 100rem;
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
     display: flex;
     font-weight: 500;
     height: 40px;
@@ -232,7 +232,7 @@
 }
 
 .lef-my-book-field-label {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: block;
     font-size: 1.2rem;
     font-weight: 400;
@@ -241,7 +241,7 @@
 }
 
 .lef-my-book-field-value {
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     font-size: 1.35rem;
     font-weight: 500;
     line-height: 1;
@@ -257,26 +257,26 @@
 }
 
 .lef-my-book-status-badge[data-status="pending"] {
-    background: var(--leb-warning-light-bg);
-    color: var(--leb-warning-color);
+    background: var(--lef-warning-light-bg);
+    color: var(--lef-warning-color);
 }
 
 .lef-my-book-status-badge[data-status="completed"] {
-    background: var(--leb-success-light-bg);
-    color: var(--leb-success-color);
+    background: var(--lef-success-light-bg);
+    color: var(--lef-success-color);
 }
 
 .lef-my-book-status-badge[data-status="rejected"] {
-    background: var(--leb-error-light-bg);
-    color: var(--leb-error-color);
+    background: var(--lef-error-light-bg);
+    color: var(--lef-error-color);
 }
 
 .lef-my-book-view-btn {
     align-items: center;
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     border: 0;
     border-radius: 1rem;
-    color: var(--leb-white);
+    color: var(--lef-white);
     display: flex;
     font-size: 1.2rem;
     font-weight: 500;
@@ -288,14 +288,14 @@
 }
 
 .lef-my-book-view-btn:hover {
-    background: var(--leb-primary-dark);
+    background: var(--lef-primary-dark);
 }
 
 /* ── Pagination ── */
 .lef-my-book-pagination {
     align-items: center;
-    background: var(--leb-bg-light);
-    border-top: 1px solid var(--leb-border-color);
+    background: var(--lef-bg-light);
+    border-top: 1px solid var(--lef-border-color);
     display: flex;
     justify-content: space-between;
     padding: 16px 24px;
@@ -308,10 +308,10 @@
 
 .lef-my-book-page-btn {
     align-items: center;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 8px;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: flex;
     font-weight: 800;
     height: 36px;
@@ -322,9 +322,9 @@
 }
 
 .lef-my-book-page-btn.is-active {
-    background: var(--leb-primary-color);
-    color: var(--leb-white);
-    border-color: var(--leb-primary-color);
+    background: var(--lef-primary-color);
+    color: var(--lef-white);
+    border-color: var(--lef-primary-color);
 }
 
 .lef-my-book-page-btn:disabled {
@@ -334,7 +334,7 @@
 
 /* ── Empty State ── */
 .lef-my-book-empty {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 1.4rem;
     font-weight: 400;
     position: absolute;
@@ -347,7 +347,7 @@
 /* ── Loader (shown during AJAX fetch) ── */
 .lef-my-book-loader {
     align-items: center;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: flex;
     font-size: 0.9rem;
     font-weight: 600;
@@ -358,9 +358,9 @@
 
 .lef-my-book-loader span {
     animation: lef-spin 0.8s linear infinite;
-    border: 3px solid var(--leb-border-color);
+    border: 3px solid var(--lef-border-color);
     border-radius: 50%;
-    border-top-color: var(--leb-primary-color);
+    border-top-color: var(--lef-primary-color);
     display: inline-block;
     height: 22px;
     width: 22px;
@@ -374,7 +374,7 @@
 
 /* ── Error message (shown on AJAX network error) ── */
 .lef-my-book-error {
-    color: var(--leb-error-color);
+    color: var(--lef-error-color);
     font-size: 0.9rem;
     font-weight: 600;
     padding: 40px 20px;
@@ -384,7 +384,7 @@
 /* ── Pagination dots separator ── */
 .lef-my-book-dots {
     align-items: center;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: flex;
     font-size: 1rem;
     height: 36px;
@@ -393,7 +393,7 @@
 
 /* ── List meta text (right side of list header) ── */
 .lef-my-book-list-meta {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 1.2rem;
     font-weight: 400;
     text-align: right;

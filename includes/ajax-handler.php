@@ -527,9 +527,12 @@ function lef_get_similar_properties() {
 			// Build secure URL
 			$detail_url = lef_get_secure_detail_url( $prop->id );
 
+			// Fetch and format the property title directly from the database using centralized helper.
+			$similar_title = lef_format_property_title( $prop->title );
+
 			$result[] = array(
 				'id'            => $prop->id,
-				'title'         => sprintf( "%s in %s", ($prop->type_name ? $prop->type_name : 'Property'), ($prop->location_name ? $prop->location_name : 'Nearby') ),
+				'title'         => $similar_title,
 				'price'         => floatval( $prop->price ),
 				'location_name' => $prop->location_name,
 				'image'         => $img_url,

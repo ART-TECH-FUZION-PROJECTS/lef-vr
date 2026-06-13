@@ -216,7 +216,7 @@
                 "error",
               );
             this.$cardList.html(
-              '<div style="padding:20px; color: var(--leb-error-color);">Error loading listings.</div>',
+              '<div style="padding:20px; color: var(--lef-error-color);">Error loading listings.</div>',
             );
           }
         },

@@ -170,5 +170,23 @@ function lef_is_contact_duplicate( $type, $value, $current_user_id ) {
         return (bool) $exists;
     }
 
-    return false;
+    	return false;
+}
+
+/**
+ * Truncate property title based on the centralized character limit to prevent layout breaking.
+ *
+ * @param string $title The property title.
+ * @return string Truncated title with '..' suffix if it exceeds the limit.
+ */
+function lef_format_property_title( $title ) {
+	// CONFIGURABLE: Centralized character limit for property titles across all templates.
+	// You can change this number (e.g., 35) to increase or decrease the globally allowed title length.
+	$limit = 35;
+
+	$title = stripslashes( (string) $title );
+	if ( mb_strlen( $title ) > $limit ) {
+		return mb_substr( $title, 0, $limit ) . '..';
+	}
+	return $title;
 }

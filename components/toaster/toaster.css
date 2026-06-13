@@ -15,18 +15,18 @@
 .lef-toast {
     min-width: 300px;
     max-width: 400px;
-    background: var(--leb-white);
+    background: var(--lef-white);
     padding: 16px 20px;
     border-radius: 12px;
-    box-shadow: var(--leb-card-shadow);
+    box-shadow: var(--lef-card-shadow);
     display: flex;
     align-items: center;
     gap: 12px;
-    border-left: 4px solid var(--leb-primary-color);
+    border-left: 4px solid var(--lef-primary-color);
     transform: translateX(120%);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s ease;
     pointer-events: auto;
-    font-family: var(--leb-font-main);
+    font-family: var(--lef-font-main);
     font-size: 14px;
     font-weight: 500;
     min-height: 25px;
@@ -37,11 +37,11 @@
 }
 
 .lef-toast.error {
-    border-left-color: var(--leb-error-color);
+    border-left-color: var(--lef-error-color);
 }
 
 .lef-toast.success {
-    border-left-color: var(--leb-primary-color);
+    border-left-color: var(--lef-primary-color);
 }
 
 .lef-toast-icon {

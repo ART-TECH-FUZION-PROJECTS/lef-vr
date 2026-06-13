@@ -33,7 +33,7 @@
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     position: relative;
-    border-bottom: 1px solid var(--leb-border-color);
+    border-bottom: 1px solid var(--lef-border-color);
 }
 
 .lef-mb-view-back-btn {
@@ -41,10 +41,10 @@
     align-items: center;
     gap: 0.5rem;
     background: transparent;
-    border: 1.5px solid var(--leb-border-color);
+    border: 1.5px solid var(--lef-border-color);
     padding: 4px 15px;
     border-radius: 8px;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 1.2rem;
     font-weight: 500;
     cursor: pointer;
@@ -52,8 +52,8 @@
 }
 
 .lef-mb-view-back-btn:hover {
-    background: var(--leb-bg-light);
-    border-color: var(--leb-secondary-color);
+    background: var(--lef-bg-light);
+    border-color: var(--lef-secondary-color);
 }
 
 .lef-mb-view-page-title {
@@ -61,7 +61,7 @@
     text-align: center;
     font-size: 1.8rem;
     font-weight: 500;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     line-height: 1.1;
 }
 
@@ -75,20 +75,20 @@
 
 /* Status variants */
 .lef-mb-view-status-badge[data-status="pending"] {
-    background: var(--leb-warning-light-bg);
-    color: var(--leb-warning-color);
+    background: var(--lef-warning-light-bg);
+    color: var(--lef-warning-color);
 }
 
 .lef-mb-view-status-badge[data-status="completed"],
 .lef-mb-view-status-badge[data-status="approve"] {
-    background: var(--leb-success-light-bg);
-    color: var(--leb-success-color);
+    background: var(--lef-success-light-bg);
+    color: var(--lef-success-color);
 }
 
 .lef-mb-view-status-badge[data-status="rejected"],
 .lef-mb-view-status-badge[data-status="cancel"] {
-    background: var(--leb-error-light-bg);
-    color: var(--leb-error-color);
+    background: var(--lef-error-light-bg);
+    color: var(--lef-error-color);
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -101,27 +101,27 @@
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     gap: 2rem;
-    border-bottom: 1px solid var(--leb-border-color);
+    border-bottom: 1px solid var(--lef-border-color);
 }
 
 .lef-mb-view-label {
     font-size: 1.2rem;
     font-weight: 400;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     margin-bottom: 0.6rem;
 }
 
 .lef-mb-view-value {
     font-size: 1.4rem;
     font-weight: 500;
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
 }
 
 .lef-mb-view-btn-primary {
     display: inline-block;
     background: transparent;
-    border: 1.5px solid var(--leb-border-color);
-    color: var(--leb-secondary-color);
+    border: 1.5px solid var(--lef-border-color);
+    color: var(--lef-secondary-color);
     padding: 8px 12px;
     border-radius: 1rem;
     text-decoration: none !important;
@@ -131,9 +131,9 @@
 }
 
 .lef-mb-view-btn-primary:hover {
-    background: var(--leb-primary-dark);
-    color: var(--leb-white);
-    border-color: var(--leb-primary-dark);
+    background: var(--lef-primary-dark);
+    color: var(--lef-white);
+    border-color: var(--lef-primary-dark);
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -150,15 +150,15 @@
     align-items: center;
     gap: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--leb-border-color);
+    border-bottom: 1px solid var(--lef-border-color);
     margin-bottom: 1rem;
 }
 
 .lef-mb-view-icon-wrap {
     width: 36px;
     height: 36px;
-    background: var(--leb-primary-light-bg);
-    color: var(--leb-primary-color);
+    background: var(--lef-primary-light-bg);
+    color: var(--lef-primary-color);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -168,7 +168,7 @@
 .lef-mb-view-card-title {
     font-size: 1.8rem;
     font-weight: 500;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     margin: 0;
 }
 
@@ -177,7 +177,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 0;
-    border-bottom: 1px dashed var(--leb-border-color);
+    border-bottom: 1px dashed var(--lef-border-color);
 }
 
 .lef-mb-view-info-row:last-child {
@@ -187,13 +187,13 @@
 .lef-mb-view-item-label {
     font-size: 1.3rem;
     font-weight: 400;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
 }
 
 .lef-mb-view-item-value {
     font-size: 1.3rem;
     font-weight: 500;
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     text-align: right;
 }
 

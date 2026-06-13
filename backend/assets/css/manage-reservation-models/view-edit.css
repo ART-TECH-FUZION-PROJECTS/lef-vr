@@ -13,8 +13,8 @@
 .lef-reserv-edit-summary,
 .lef-reserv-edit-section,
 .lef-reserv-edit-status-card {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
 }
 
@@ -28,10 +28,10 @@
 
 .lef-reserv-edit-back-btn {
     align-items: center;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-default);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-default);
     border-radius: 8px;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     display: inline-flex;
     font-size: 0.9rem;
     font-weight: 600;
@@ -46,19 +46,19 @@
 .lef-reserv-edit-back-btn svg {
     width: 20px;
     height: 20px;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
 }
 
 .lef-reserv-edit-back-btn:hover,
 .lef-reserv-edit-back-btn:focus-visible {
-    background: var(--leb-primary-light-bg);
-    border-color: var(--leb-primary-color);
-    color: var(--leb-primary-color);
+    background: var(--lef-primary-light-bg);
+    border-color: var(--lef-primary-color);
+    color: var(--lef-primary-color);
     outline: 0;
 }
 
 .lef-reserv-edit-page-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 1.45rem !important;
     font-weight: 500 !important;
     line-height: 1.1 !important;
@@ -79,18 +79,18 @@
 }
 
 .lef-reserv-edit-status-badge[data-lef-reserv-edit-status="pending"] {
-    background: var(--leb-warning-light-bg);
-    color: var(--leb-warning-color);
+    background: var(--lef-warning-light-bg);
+    color: var(--lef-warning-color);
 }
 
 .lef-reserv-edit-status-badge[data-lef-reserv-edit-status="completed"] {
-    background: var(--leb-success-light-bg);
-    color: var(--leb-success-color);
+    background: var(--lef-success-light-bg);
+    color: var(--lef-success-color);
 }
 
 .lef-reserv-edit-status-badge[data-lef-reserv-edit-status="rejected"] {
-    background: var(--leb-error-light-bg);
-    color: var(--leb-error-color);
+    background: var(--lef-error-light-bg);
+    color: var(--lef-error-color);
 }
 
 .lef-reserv-edit-summary {
@@ -105,7 +105,7 @@
 }
 
 .lef-reserv-edit-label {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: block;
     font-size: 0.8rem;
     font-weight: 400;
@@ -114,7 +114,7 @@
 }
 
 .lef-reserv-edit-value {
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     display: block;
     font-size: 1rem;
     font-weight: 500;
@@ -142,26 +142,26 @@
 }
 
 .lef-reserv-edit-view-btn {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-default);
-    color: var(--leb-secondary-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-default);
+    color: var(--lef-secondary-color);
 }
 
 .lef-reserv-edit-view-btn svg {
     height: 20px;
     width: 20px;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
 }
 
 .lef-reserv-edit-view-btn:hover svg {
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
 }
 
 .lef-reserv-edit-view-btn:hover,
 .lef-reserv-edit-view-btn:focus-visible {
-    background: var(--leb-primary-light-bg);
-    border-color: var(--leb-primary-color);
-    color: var(--leb-primary-color);
+    background: var(--lef-primary-light-bg);
+    border-color: var(--lef-primary-color);
+    color: var(--lef-primary-color);
     outline: 0;
 }
 
@@ -177,7 +177,7 @@
 
 .lef-reserv-edit-section-head {
     align-items: center;
-    border-bottom: 1px solid var(--leb-border-color);
+    border-bottom: 1px solid var(--lef-border-color);
     display: flex;
     gap: 0.7rem;
     padding: 16px 18px;
@@ -185,10 +185,10 @@
 
 .lef-reserv-edit-section-icon {
     align-items: center;
-    background: var(--leb-primary-light-bg);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-primary-light-bg);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
     display: flex;
     height: 34px;
     justify-content: center;
@@ -201,7 +201,7 @@
 }
 
 .lef-reserv-edit-section-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -214,7 +214,7 @@
 
 .lef-reserv-edit-detail-row {
     align-items: center;
-    border-bottom: 1.5px dashed var(--leb-border-color);
+    border-bottom: 1.5px dashed var(--lef-border-color);
     display: flex;
     gap: 1rem;
     justify-content: space-between;
@@ -226,14 +226,14 @@
 }
 
 .lef-reserv-edit-detail-label {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     flex: 0 0 auto;
     font-size: 0.9rem;
     font-weight: 400;
 }
 
 .lef-reserv-edit-detail-value {
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     font-size: 0.9rem;
     font-weight: 500;
     overflow-wrap: anywhere;
@@ -256,10 +256,10 @@
 
 .lef-reserv-edit-status-select {
     appearance: none !important;
-    background: var(--leb-white) !important;
-    border: 2px solid var(--leb-border-default);
+    background: var(--lef-white) !important;
+    border: 2px solid var(--lef-border-default);
     border-radius: 1rem !important;
-    color: var(--leb-secondary-color) !important;
+    color: var(--lef-secondary-color) !important;
     cursor: pointer !important;
     font-size: 0.95rem !important;
     font-weight: 500;
@@ -271,12 +271,12 @@
 }
 
 .lef-reserv-edit-status-select:focus {
-    border-color: var(--leb-primary-color);
-    box-shadow: var(--leb-focus-shadow);
+    border-color: var(--lef-primary-color);
+    box-shadow: var(--lef-focus-shadow);
 }
 
 .lef-reserv-edit-select-icon {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     pointer-events: none;
     position: absolute;
     right: 14px;
@@ -289,27 +289,27 @@
 }
 
 .lef-reserv-edit-save-btn {
-    background: var(--leb-primary-color);
-    border: 1px solid var(--leb-primary-color);
-    color: var(--leb-white);
+    background: var(--lef-primary-color);
+    border: 1px solid var(--lef-primary-color);
+    color: var(--lef-white);
     cursor: pointer;
 }
 
 .lef-reserv-edit-save-btn svg {
     height: 20px;
     width: 20px;
-    color: var(--leb-white);
+    color: var(--lef-white);
 }
 
 .lef-reserv-edit-save-btn:hover,
 .lef-reserv-edit-save-btn:focus-visible {
-    background: var(--leb-primary-dark);
-    border-color: var(--leb-primary-dark);
+    background: var(--lef-primary-dark);
+    border-color: var(--lef-primary-dark);
     outline: 0;
 }
 
 .lef-reserv-edit-save-note {
-    color: var(--leb-success-color);
+    color: var(--lef-success-color);
     display: none;
     font-size: 0.85rem;
     font-weight: 400;

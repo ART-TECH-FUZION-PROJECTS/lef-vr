@@ -12,8 +12,8 @@
 
 .lef-reserv-header {
     align-items: center;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     display: flex;
     justify-content: space-between;
@@ -28,9 +28,9 @@
 
 .lef-reserv-title-icon {
     align-items: center;
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     border-radius: 1rem;
-    color: var(--leb-white);
+    color: var(--lef-white);
     display: flex;
     flex: 0 0 auto;
     justify-content: center;
@@ -44,7 +44,7 @@
 }
 
 .lef-reserv-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 1.6rem !important;
     font-weight: 500 !important;
     line-height: 1 !important;
@@ -53,7 +53,7 @@
 }
 
 .lef-reserv-subtitle {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 1;
@@ -63,9 +63,9 @@
 
 .lef-reserv-summary {
     align-items: center;
-    background: var(--leb-primary-light-bg);
+    background: var(--lef-primary-light-bg);
     border-radius: 1rem;
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     display: inline-flex;
     font-size: 0.85rem;
     font-weight: 500;
@@ -76,9 +76,9 @@
 
 .lef-reserv-summary-count {
     align-items: center;
-    background: var(--leb-primary-color);
+    background: var(--lef-primary-color);
     border-radius: 100rem;
-    color: var(--leb-white);
+    color: var(--lef-white);
     display: inline-flex;
     justify-content: center;
     min-width: 30px;
@@ -96,8 +96,8 @@
 .lef-reserv-search-box {
     flex: 1;
     align-items: center;
-    background: var(--leb-white);
-    border: 2px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 2px solid var(--lef-border-color);
     border-radius: 1rem;
     display: flex;
     gap: 1rem;
@@ -110,10 +110,10 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.8rem 1.5rem;
-    background: var(--leb-white);
-    border: 2px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 2px solid var(--lef-border-color);
     border-radius: 1rem;
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     font-weight: 600;
     font-size: 0.9rem;
     cursor: pointer;
@@ -122,18 +122,18 @@
 }
 
 .lef-reserv-export-btn:hover {
-    border-color: var(--leb-primary-color);
-    color: var(--leb-primary-color);
+    border-color: var(--lef-primary-color);
+    color: var(--lef-primary-color);
 }
 
 .lef-reserv-search-box.lef-reserv-search-focused {
-    border-color: var(--leb-primary-color);
-    box-shadow: var(--leb-focus-shadow);
+    border-color: var(--lef-primary-color);
+    box-shadow: var(--lef-focus-shadow);
 }
 
 .lef-reserv-search-icon {
     align-items: center;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: flex;
     width: 22px;
     height: auto;
@@ -148,7 +148,7 @@
     background: transparent;
     border: 0 !important;
     box-shadow: none !important;
-    color: var(--leb-text-color) !important;
+    color: var(--lef-text-color) !important;
     flex: 1;
     font-size: 1rem !important;
     outline: 0;
@@ -169,10 +169,10 @@
 
 .lef-reserv-search-clear {
     align-items: center;
-    background: var(--leb-bg-light);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-bg-light);
+    border: 1px solid var(--lef-border-color);
     border-radius: 100rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: none;
     justify-content: center;
     width: 30px;
@@ -192,8 +192,8 @@
 
 /* Tabs */
 .lef-reserv-tabs {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     display: grid;
     gap: 1rem;
@@ -205,7 +205,7 @@
     background: transparent;
     border: 0;
     border-radius: 1rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: inline-flex;
     font-size: 0.94rem;
     font-weight: 500;
@@ -217,42 +217,42 @@
 }
 
 .lef-reserv-tab:hover {
-    background: var(--leb-primary-light-bg);
-    color: var(--leb-secondary-color);
+    background: var(--lef-primary-light-bg);
+    color: var(--lef-secondary-color);
 }
 
 .lef-reserv-tab.lef-reserv-tab-active {
-    background: var(--leb-primary-color);
-    color: var(--leb-white);
+    background: var(--lef-primary-color);
+    color: var(--lef-white);
 }
 
 .lef-reserv-tab-count {
-    background: var(--leb-white);
+    background: var(--lef-white);
     border-radius: 100rem;
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
     font-size: 0.6rem;
     padding: 4px 10px;
 }
 
 /* List Area */
 .lef-reserv-list-shell {
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
-    box-shadow: var(--leb-card-shadow);
+    box-shadow: var(--lef-card-shadow);
     overflow: hidden;
 }
 
 .lef-reserv-list-head {
     align-items: center;
-    border-bottom: 1px solid var(--leb-border-color);
+    border-bottom: 1px solid var(--lef-border-color);
     display: flex;
     justify-content: space-between;
     padding: 16px 18px;
 }
 
 .lef-reserv-list-title {
-    color: var(--leb-secondary-color);
+    color: var(--lef-secondary-color);
     font-size: 1.2rem !important;
     font-weight: 500;
 }
@@ -275,7 +275,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     font-size: 0.9rem;
     font-weight: 550;
     margin-right: 1rem;
@@ -295,10 +295,10 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: var(--leb-bg-light);
+    background: var(--lef-bg-light);
     padding: 4px;
     border-radius: 0.8rem;
-    border: 1px solid var(--leb-border-color);
+    border: 1px solid var(--lef-border-color);
 }
 
 .lef-reserv-bulk-select {
@@ -306,13 +306,13 @@
     border: 0 !important;
     font-size: 0.85rem !important;
     padding: 0 10px !important;
-    color: var(--leb-text-color) !important;
+    color: var(--lef-text-color) !important;
     cursor: pointer;
 }
 
 .lef-reserv-btn-primary {
-    background: var(--leb-primary-color);
-    color: var(--leb-white);
+    background: var(--lef-primary-color);
+    color: var(--lef-white);
 }
 
 .lef-reserv-btn-primary:hover {
@@ -320,8 +320,8 @@
 }
 
 .lef-reserv-btn-danger {
-    background: var(--leb-error-color);
-    color: var(--leb-white);
+    background: var(--lef-error-color);
+    color: var(--lef-white);
 }
 
 .lef-reserv-btn-danger:hover {
@@ -330,20 +330,20 @@
 
 .lef-reserv-btn-danger-outline {
     background: transparent;
-    border-color: var(--leb-error-color);
-    color: var(--leb-error-color);
+    border-color: var(--lef-error-color);
+    color: var(--lef-error-color);
 }
 
 .lef-reserv-btn-danger-outline:hover {
-    background: var(--leb-error-color);
-    color: var(--leb-white);
+    background: var(--lef-error-color);
+    color: var(--lef-white);
 }
 
 .lef-reserv-checkbox {
     width: 18px !important;
     height: 18px !important;
     cursor: pointer !important;
-    accent-color: var(--leb-primary-color);
+    accent-color: var(--lef-primary-color);
 }
 
 /* Checkbox in Card */
@@ -351,11 +351,11 @@
     display: flex;
     align-items: center;
     padding-right: 12px;
-    border-right: 1px solid var(--leb-border-color);
+    border-right: 1px solid var(--lef-border-color);
 }
 
 .lef-reserv-card {
-    border: 1px solid var(--leb-border-color);
+    border: 1px solid var(--lef-border-color);
     border-radius: 1rem;
     display: grid;
     gap: 1rem;
@@ -366,16 +366,16 @@
 }
 
 .lef-reserv-card:hover {
-    border-color: var(--leb-primary-color);
+    border-color: var(--lef-primary-color);
     transform: translateY(-1px);
 }
 
 .lef-reserv-sno {
     align-items: center;
-    background: var(--leb-primary-light-bg);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-primary-light-bg);
+    border: 1px solid var(--lef-border-color);
     border-radius: 100rem;
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
     display: flex;
     font-size: 0.9rem;
     font-weight: 500;
@@ -391,7 +391,7 @@
 }
 
 .lef-reserv-field-label {
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: block;
     font-size: 0.85rem;
     font-weight: 400;
@@ -400,7 +400,7 @@
 }
 
 .lef-reserv-field-value {
-    color: var(--leb-text-color);
+    color: var(--lef-text-color);
     display: block;
     font-size: 0.95rem;
     font-weight: 550;
@@ -416,18 +416,18 @@
 }
 
 .lef-reserv-status-badge[data-lef-reserv-status="pending"] {
-    background: var(--leb-warning-light-bg);
-    color: var(--leb-warning-color);
+    background: var(--lef-warning-light-bg);
+    color: var(--lef-warning-color);
 }
 
 .lef-reserv-status-badge[data-lef-reserv-status="completed"] {
-    background: var(--leb-success-light-bg);
-    color: var(--leb-success-color);
+    background: var(--lef-success-light-bg);
+    color: var(--lef-success-color);
 }
 
 .lef-reserv-status-badge[data-lef-reserv-status="rejected"] {
-    background: var(--leb-error-light-bg);
-    color: var(--leb-error-color);
+    background: var(--lef-error-light-bg);
+    color: var(--lef-error-color);
 }
 
 .lef-reserv-card-actions {
@@ -438,10 +438,10 @@
 
 .lef-reserv-view-btn {
     align-items: center;
-    background: var(--leb-primary-color);
-    border: 1px solid var(--leb-primary-color);
+    background: var(--lef-primary-color);
+    border: 1px solid var(--lef-primary-color);
     border-radius: 1rem;
-    color: var(--leb-white);
+    color: var(--lef-white);
     display: inline-flex;
     font-size: 0.8rem;
     font-weight: 500;
@@ -453,14 +453,14 @@
 }
 
 .lef-reserv-view-btn:hover {
-    color: var(--leb-white);
+    color: var(--lef-white);
     transform: translateY(-2px);
 }
 
 /* Pagination */
 .lef-reserv-pagination {
     align-items: center;
-    border-top: 1px solid var(--leb-border-color);
+    border-top: 1px solid var(--lef-border-color);
     display: flex;
     justify-content: space-between;
     padding: 16px 18px;
@@ -473,10 +473,10 @@
 
 .lef-reserv-page-btn {
     align-items: center;
-    background: var(--leb-white);
-    border: 1px solid var(--leb-border-color);
+    background: var(--lef-white);
+    border: 1px solid var(--lef-border-color);
     border-radius: 100rem;
-    color: var(--leb-text-muted);
+    color: var(--lef-text-muted);
     display: inline-flex;
     font-size: 0.8rem;
     font-weight: 500;
@@ -487,9 +487,9 @@
 }
 
 .lef-reserv-page-btn.lef-reserv-page-active {
-    background: var(--leb-primary-color);
-    color: var(--leb-white);
-    border-color: var(--leb-primary-color);
+    background: var(--lef-primary-color);
+    color: var(--lef-white);
+    border-color: var(--lef-primary-color);
 }
 
 .lef-reserv-page-btn:disabled {
@@ -511,9 +511,9 @@
 }
 
 .lef-reserv-empty-icon {
-    background: var(--leb-primary-light-bg);
+    background: var(--lef-primary-light-bg);
     border-radius: 50%;
-    color: var(--leb-primary-color);
+    color: var(--lef-primary-color);
     height: 64px;
     width: 64px;
     display: flex;
