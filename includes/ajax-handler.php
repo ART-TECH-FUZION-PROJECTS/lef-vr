@@ -406,8 +406,10 @@ add_action( 'wp_ajax_lef_check_review_eligibility', 'lef_check_review_eligibilit
 
 /* ==================== SIMILAR PROPERTIES ==================== */
 /**
- * Fetch similar properties based on location, type, price range.
- * Expects POST: nonce, property_id
+ * Fetch similar properties based on location.
+ * Only returns properties in the exact same location as the current property.
+ *
+ * @return void Sends JSON response with array of properties.
  */
 function lef_get_similar_properties() {
 	check_ajax_referer( 'lef_spv_nonce', 'nonce' );
@@ -421,9 +423,8 @@ function lef_get_similar_properties() {
 
 	// Get current property details for comparison
 	$current = $wpdb->get_row( $wpdb->prepare(
-		"SELECT p.location, p.type, p.amenities, TRIM(LOWER(loc.name)) as location_name 
+		"SELECT p.location
 		 FROM {$wpdb->prefix}ls_property p 
-		 LEFT JOIN {$wpdb->prefix}ls_location loc ON p.location = loc.id
 		 WHERE p.id = %d",
 		$property_id
 	) );
@@ -432,30 +433,9 @@ function lef_get_similar_properties() {
 		wp_send_json_error( array( 'message' => 'Property not found.' ) );
 	}
 
-	$loc_name = $current->location_name;
+	$location_id = intval( $current->location );
 
-	// ── Build Amenity Clause ──
-	$amenity_clause = "";
-	$amenities_raw  = $current->amenities;
-	if ( ! empty( $amenities_raw ) ) {
-		$amenity_ids = json_decode( $amenities_raw, true );
-		if ( ! is_array( $amenity_ids ) ) {
-			$amenity_ids = array_map( 'intval', array_filter( explode( ',', $amenities_raw ) ) );
-		}
-		
-		if ( ! empty( $amenity_ids ) ) {
-			$parts = array();
-			foreach ( $amenity_ids as $aid ) {
-				$aid = intval( $aid );
-				$parts[] = "p.amenities LIKE '%\"$aid\"%'";
-				$parts[] = "FIND_IN_SET('$aid', p.amenities)";
-			}
-			if ( ! empty( $parts ) ) {
-				$amenity_clause = "OR (" . implode( ' OR ', $parts ) . ")";
-			}
-		}
-	}
-
+	// Fetch up to 6 properties in the same location, excluding the current property
 	$similar = $wpdb->get_results( $wpdb->prepare(
 		"SELECT p.id, p.title, p.price, p.guests, p.location,
 		        loc.name as location_name, t.name as type_name
@@ -464,14 +444,10 @@ function lef_get_similar_properties() {
 		 LEFT JOIN {$wpdb->prefix}ls_types t ON p.type = t.id
 		 WHERE p.id != %d
 		   AND p.status = 'published'
-		   AND (
-		       (loc.name IS NOT NULL AND TRIM(LOWER(loc.name)) = %s) OR 
-		       (p.type IS NOT NULL AND p.type != '' AND p.type = %s)
-		       $amenity_clause
-		   )
-		 LIMIT 8",
+		   AND p.location = %d
+		 LIMIT 6",
 		$property_id,
-		$loc_name, $current->type
+		$location_id
 	) );
 
 	$result = array();

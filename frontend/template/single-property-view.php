@@ -74,6 +74,23 @@ if ($host_id) {
     $host_name      = ! empty($host_name_meta) ? $host_name_meta : ($host_user ? $host_user->display_name : '');
 
     $host_pic  = lef_get_user_profile_pic($host_id);
+} else {
+    // Default to the administrator's information if no host is assigned.
+    $admin_user = get_user_by('email', get_option('admin_email'));
+    if (! $admin_user) {
+        $admin_user = get_userdata(1);
+    }
+    if (! $admin_user) {
+        $admin_users = get_users(array('role' => 'administrator', 'number' => 1));
+        if (! empty($admin_users)) {
+            $admin_user = $admin_users[0];
+        }
+    }
+    if ($admin_user) {
+        $admin_name_meta = get_user_meta($admin_user->ID, 'full_name', true);
+        $host_name       = ! empty($admin_name_meta) ? $admin_name_meta : $admin_user->display_name;
+        $host_pic        = lef_get_user_profile_pic($admin_user->ID);
+    }
 }
 
 /* ── 5. Reviews (approved only) ── */
@@ -541,7 +558,7 @@ $lef_review_char_limit = 250;
         <?php endif; ?>
 
         <!-- ── Similar Properties ── -->
-        <div class="lefdk-similar-results">
+        <div class="lefdk-similar-results" style="display: none;">
             <div class="lefdk-sm-header-cont">
                 <h1 class="lefdk-sm-heading">More stays nearby</h1>
                 <div class="lefdk-sm-nav">
@@ -743,7 +760,7 @@ $lef_review_char_limit = 250;
             <?php endif; ?>
 
             <!-- Similar Properties -->
-            <div class="lefmb-similar-results">
+            <div class="lefmb-similar-results" style="display: none;">
                 <div class="lefdk-sm-header-cont">
                     <h1 class="lefmb-sm-heading">More stays nearby</h1>
                     <div class="lefdk-sm-nav">
